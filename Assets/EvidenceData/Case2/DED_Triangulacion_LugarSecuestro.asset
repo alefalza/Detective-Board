@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5027245b3db086547846b12a4825367d, type: 3}
+  m_Name: DED_Triangulacion_LugarSecuestro
+  m_EditorClassIdentifier: Assembly-CSharp::DeductionRule
+  requiredEvidences:
+  - {fileID: 11400000, guid: c78bf4403404be14ca3c414ed64f845c, type: 2}
+  - {fileID: 11400000, guid: d020da565dcca04478c2ad00ddcbdcb6, type: 2}
+  - {fileID: 11400000, guid: 4517b90e739a742458e4a3954260997c, type: 2}
+  partialHints:
+  - evidenceA: {fileID: 11400000, guid: c78bf4403404be14ca3c414ed64f845c, type: 2}
+    evidenceB: {fileID: 11400000, guid: d020da565dcca04478c2ad00ddcbdcb6, type: 2}
+    text: "Hay l\xF3gica en el trayecto, pero te falta la referencia de la f\xE1brica.
+      Est\xE1s bien con el horario y el testimonio."
+  - evidenceA: {fileID: 11400000, guid: d020da565dcca04478c2ad00ddcbdcb6, type: 2}
+    evidenceB: {fileID: 11400000, guid: 4517b90e739a742458e4a3954260997c, type: 2}
+    text: "El perfil del trabajador y el testimonio de la casa cierran, pero te falta
+      el registro de movimiento. Est\xE1s bien con la salida y el domicilio."
+  - evidenceA: {fileID: 11400000, guid: c78bf4403404be14ca3c414ed64f845c, type: 2}
+    evidenceB: {fileID: 11400000, guid: 4517b90e739a742458e4a3954260997c, type: 2}
+    text: "El boleto y la ficha gremial encajan, pero no me cierra el contexto del
+      operativo. Est\xE1s bien con el transporte y el trabajo."
+  resultDescription: "Perfecto. El boleto del <keyword>24 de mayo</keyword> confirma
+    que la v\xEDctima aguardaba la <keyword>L\xEDnea 217</keyword> cuando fue interceptada
+    en la <keyword>v\xEDa p\xFAblica</keyword>."
+  invalidatedEvidence: {fileID: 11400000, guid: ca6c248cc8ed29745b87d892f615b9d7, type: 2}
+  newUnlockedEvidence: {fileID: 0}

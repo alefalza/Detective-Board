@@ -1,0 +1,799 @@
+fileFormatVersion: 2
+guid: 0c65d50d24ea3b440bbe92f00d3f14a7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8293869912077472226
+    second: "\u2014Pngtree\u2014ink blot material_4379940_0"
+  - first:
+      213: -6259302064168284988
+    second: "\u2014Pngtree\u2014ink blot material_4379940_1"
+  - first:
+      213: -1199411611958975594
+    second: "\u2014Pngtree\u2014ink blot material_4379940_2"
+  - first:
+      213: 4460007875667056616
+    second: "\u2014Pngtree\u2014ink blot material_4379940_3"
+  - first:
+      213: 2519725925553668733
+    second: "\u2014Pngtree\u2014ink blot material_4379940_4"
+  - first:
+      213: -4832276187744133324
+    second: "\u2014Pngtree\u2014ink blot material_4379940_5"
+  - first:
+      213: -3738555660370024639
+    second: "\u2014Pngtree\u2014ink blot material_4379940_6"
+  - first:
+      213: -4813960079551110578
+    second: "\u2014Pngtree\u2014ink blot material_4379940_7"
+  - first:
+      213: 1892910169143949306
+    second: "\u2014Pngtree\u2014ink blot material_4379940_8"
+  - first:
+      213: 8791011742039567892
+    second: "\u2014Pngtree\u2014ink blot material_4379940_9"
+  - first:
+      213: -3078580459328242054
+    second: "\u2014Pngtree\u2014ink blot material_4379940_10"
+  - first:
+      213: -7928511264860313995
+    second: "\u2014Pngtree\u2014ink blot material_4379940_11"
+  - first:
+      213: -8072441834718876837
+    second: "\u2014Pngtree\u2014ink blot material_4379940_12"
+  - first:
+      213: 2405850678577366123
+    second: "\u2014Pngtree\u2014ink blot material_4379940_13"
+  - first:
+      213: -5341644876765637716
+    second: "\u2014Pngtree\u2014ink blot material_4379940_14"
+  - first:
+      213: 5155488181607776392
+    second: "\u2014Pngtree\u2014ink blot material_4379940_15"
+  - first:
+      213: -1312792811562153394
+    second: "\u2014Pngtree\u2014ink blot material_4379940_16"
+  - first:
+      213: -4187342345195099971
+    second: "\u2014Pngtree\u2014ink blot material_4379940_17"
+  - first:
+      213: -5449051338897246500
+    second: "\u2014Pngtree\u2014ink blot material_4379940_18"
+  - first:
+      213: -3031458893178999673
+    second: "\u2014Pngtree\u2014ink blot material_4379940_19"
+  - first:
+      213: 3595053460002087288
+    second: "\u2014Pngtree\u2014ink blot material_4379940_20"
+  - first:
+      213: -3483017435770927338
+    second: "\u2014Pngtree\u2014ink blot material_4379940_21"
+  - first:
+      213: 5586039552176830424
+    second: "\u2014Pngtree\u2014ink blot material_4379940_22"
+  - first:
+      213: -2852457845039473672
+    second: "\u2014Pngtree\u2014ink blot material_4379940_23"
+  - first:
+      213: -1031912930037639362
+    second: "\u2014Pngtree\u2014ink blot material_4379940_24"
+  - first:
+      213: 5013246703623662868
+    second: "\u2014Pngtree\u2014ink blot material_4379940_25"
+  - first:
+      213: -8456116847563038778
+    second: "\u2014Pngtree\u2014ink blot material_4379940_26"
+  - first:
+      213: -3374483043739056901
+    second: "\u2014Pngtree\u2014ink blot material_4379940_27"
+  - first:
+      213: -6474612506700134171
+    second: "\u2014Pngtree\u2014ink blot material_4379940_28"
+  - first:
+      213: -3727054292678225223
+    second: "\u2014Pngtree\u2014ink blot material_4379940_29"
+  - first:
+      213: 7182178772846549492
+    second: "\u2014Pngtree\u2014ink blot material_4379940_30"
+  - first:
+      213: -8634777333292814891
+    second: "\u2014Pngtree\u2014ink blot material_4379940_31"
+  - first:
+      213: -2515079109072063216
+    second: "\u2014Pngtree\u2014ink blot material_4379940_32"
+  - first:
+      213: -4657197934478164231
+    second: "\u2014Pngtree\u2014ink blot material_4379940_33"
+  - first:
+      213: -6290822342181538389
+    second: "\u2014Pngtree\u2014ink blot material_4379940_34"
+  - first:
+      213: -7982505212116255083
+    second: "\u2014Pngtree\u2014ink blot material_4379940_35"
+  - first:
+      213: 8643881292841572590
+    second: "\u2014Pngtree\u2014ink blot material_4379940_36"
+  - first:
+      213: 44132400927072702
+    second: "\u2014Pngtree\u2014ink blot material_4379940_37"
+  - first:
+      213: 7142645113932269848
+    second: "\u2014Pngtree\u2014ink blot material_4379940_38"
+  - first:
+      213: -7582083783227478164
+    second: "\u2014Pngtree\u2014ink blot material_4379940_39"
+  - first:
+      213: 3029697060329853487
+    second: "\u2014Pngtree\u2014ink blot material_4379940_40"
+  - first:
+      213: -598918969025133943
+    second: "\u2014Pngtree\u2014ink blot material_4379940_41"
+  - first:
+      213: -5296799554001278438
+    second: "\u2014Pngtree\u2014ink blot material_4379940_42"
+  - first:
+      213: 2625936557898135436
+    second: "\u2014Pngtree\u2014ink blot material_4379940_43"
+  - first:
+      213: -2969684515323923785
+    second: "\u2014Pngtree\u2014ink blot material_4379940_44"
+  - first:
+      213: -8612567502476700812
+    second: "\u2014Pngtree\u2014ink blot material_4379940_45"
+  - first:
+      213: -1056931821971179543
+    second: "\u2014Pngtree\u2014ink blot material_4379940_46"
+  - first:
+      213: -4577216168244033990
+    second: "\u2014Pngtree\u2014ink blot material_4379940_47"
+  - first:
+      213: 536945572116883880
+    second: "\u2014Pngtree\u2014ink blot material_4379940_48"
+  - first:
+      213: 3852446500642404265
+    second: "\u2014Pngtree\u2014ink blot material_4379940_49"
+  - first:
+      213: 2296282192534758680
+    second: "\u2014Pngtree\u2014ink blot material_4379940_50"
+  - first:
+      213: -2880258936832072243
+    second: "\u2014Pngtree\u2014ink blot material_4379940_51"
+  - first:
+      213: 8241183131360267348
+    second: "\u2014Pngtree\u2014ink blot material_4379940_52"
+  - first:
+      213: -4258003939990844096
+    second: "\u2014Pngtree\u2014ink blot material_4379940_53"
+  - first:
+      213: -4286843759877437976
+    second: "\u2014Pngtree\u2014ink blot material_4379940_54"
+  - first:
+      213: 52845702314160243
+    second: "\u2014Pngtree\u2014ink blot material_4379940_55"
+  - first:
+      213: -5456211393233677719
+    second: "\u2014Pngtree\u2014ink blot material_4379940_56"
+  - first:
+      213: 93373848381442101
+    second: "\u2014Pngtree\u2014ink blot material_4379940_57"
+  - first:
+      213: 6212048428830254826
+    second: "\u2014Pngtree\u2014ink blot material_4379940_58"
+  - first:
+      213: 6910829820665607353
+    second: "\u2014Pngtree\u2014ink blot material_4379940_59"
+  - first:
+      213: -8799552916288200998
+    second: "\u2014Pngtree\u2014ink blot material_4379940_60"
+  - first:
+      213: 2192951175289730302
+    second: "\u2014Pngtree\u2014ink blot material_4379940_61"
+  - first:
+      213: -8364012760828394419
+    second: "\u2014Pngtree\u2014ink blot material_4379940_62"
+  - first:
+      213: -7386895527353352339
+    second: "\u2014Pngtree\u2014ink blot material_4379940_63"
+  - first:
+      213: -6947463879142143743
+    second: "\u2014Pngtree\u2014ink blot material_4379940_64"
+  - first:
+      213: 2790016853614727991
+    second: "\u2014Pngtree\u2014ink blot material_4379940_65"
+  - first:
+      213: 4887595735474471007
+    second: "\u2014Pngtree\u2014ink blot material_4379940_66"
+  - first:
+      213: 1986667217771880002
+    second: "\u2014Pngtree\u2014ink blot material_4379940_67"
+  - first:
+      213: -7887110236810870534
+    second: "\u2014Pngtree\u2014ink blot material_4379940_68"
+  - first:
+      213: -7174906339646371178
+    second: "\u2014Pngtree\u2014ink blot material_4379940_69"
+  - first:
+      213: 4203116504387515579
+    second: "\u2014Pngtree\u2014ink blot material_4379940_70"
+  - first:
+      213: 27487008419384734
+    second: "\u2014Pngtree\u2014ink blot material_4379940_71"
+  - first:
+      213: -7597423626293721354
+    second: "\u2014Pngtree\u2014ink blot material_4379940_72"
+  - first:
+      213: -4479840050257611349
+    second: "\u2014Pngtree\u2014ink blot material_4379940_73"
+  - first:
+      213: 137104000135715864
+    second: "\u2014Pngtree\u2014ink blot material_4379940_74"
+  - first:
+      213: 8897842780797138879
+    second: "\u2014Pngtree\u2014ink blot material_4379940_75"
+  - first:
+      213: 5918392442749947374
+    second: "\u2014Pngtree\u2014ink blot material_4379940_76"
+  - first:
+      213: -1065267899522412759
+    second: "\u2014Pngtree\u2014ink blot material_4379940_77"
+  - first:
+      213: 2035487855105017394
+    second: "\u2014Pngtree\u2014ink blot material_4379940_78"
+  - first:
+      213: -7761773931896097406
+    second: "\u2014Pngtree\u2014ink blot material_4379940_79"
+  - first:
+      213: -6194889974486951688
+    second: "\u2014Pngtree\u2014ink blot material_4379940_80"
+  - first:
+      213: -5131829186910904712
+    second: "\u2014Pngtree\u2014ink blot material_4379940_81"
+  - first:
+      213: 2252948407177855649
+    second: "\u2014Pngtree\u2014ink blot material_4379940_82"
+  - first:
+      213: -5858069234045404407
+    second: "\u2014Pngtree\u2014ink blot material_4379940_83"
+  - first:
+      213: -7442384634982935813
+    second: "\u2014Pngtree\u2014ink blot material_4379940_84"
+  - first:
+      213: -4635536598381635629
+    second: "\u2014Pngtree\u2014ink blot material_4379940_85"
+  - first:
+      213: -7671095259191229599
+    second: "\u2014Pngtree\u2014ink blot material_4379940_86"
+  - first:
+      213: -1135801646637727041
+    second: "\u2014Pngtree\u2014ink blot material_4379940_87"
+  - first:
+      213: 1520793867717636800
+    second: "\u2014Pngtree\u2014ink blot material_4379940_88"
+  - first:
+      213: -6564661090625294504
+    second: "\u2014Pngtree\u2014ink blot material_4379940_89"
+  - first:
+      213: 4493313245535205000
+    second: "\u2014Pngtree\u2014ink blot material_4379940_90"
+  - first:
+      213: -8243843390108527554
+    second: "\u2014Pngtree\u2014ink blot material_4379940_91"
+  - first:
+      213: -1637293183981754538
+    second: "\u2014Pngtree\u2014ink blot material_4379940_92"
+  - first:
+      213: 296122802070489313
+    second: "\u2014Pngtree\u2014ink blot material_4379940_93"
+  - first:
+      213: 5600706772274537959
+    second: "\u2014Pngtree\u2014ink blot material_4379940_94"
+  - first:
+      213: 6458173820356592556
+    second: "\u2014Pngtree\u2014ink blot material_4379940_95"
+  - first:
+      213: -9025229461902569764
+    second: "\u2014Pngtree\u2014ink blot material_4379940_96"
+  - first:
+      213: 8071088219625713217
+    second: "\u2014Pngtree\u2014ink blot material_4379940_97"
+  - first:
+      213: -3584938825375916223
+    second: "\u2014Pngtree\u2014ink blot material_4379940_98"
+  - first:
+      213: -1062752438727865567
+    second: "\u2014Pngtree\u2014ink blot material_4379940_99"
+  - first:
+      213: -3981330769942444057
+    second: "\u2014Pngtree\u2014ink blot material_4379940_100"
+  - first:
+      213: 8820034615075049017
+    second: "\u2014Pngtree\u2014ink blot material_4379940_101"
+  - first:
+      213: 7919906201696562640
+    second: "\u2014Pngtree\u2014ink blot material_4379940_102"
+  - first:
+      213: 3488920167582328458
+    second: "\u2014Pngtree\u2014ink blot material_4379940_103"
+  - first:
+      213: 4431085011062423615
+    second: "\u2014Pngtree\u2014ink blot material_4379940_104"
+  - first:
+      213: -1757294478066757584
+    second: "\u2014Pngtree\u2014ink blot material_4379940_105"
+  - first:
+      213: 4616794319909777748
+    second: "\u2014Pngtree\u2014ink blot material_4379940_106"
+  - first:
+      213: -1048088907110982673
+    second: "\u2014Pngtree\u2014ink blot material_4379940_107"
+  - first:
+      213: 8310075890212502784
+    second: "\u2014Pngtree\u2014ink blot material_4379940_108"
+  - first:
+      213: 2941216951238192078
+    second: "\u2014Pngtree\u2014ink blot material_4379940_109"
+  - first:
+      213: 3235619199578959715
+    second: "\u2014Pngtree\u2014ink blot material_4379940_110"
+  - first:
+      213: -2328670347157284159
+    second: "\u2014Pngtree\u2014ink blot material_4379940_111"
+  - first:
+      213: 7299485728663938485
+    second: "\u2014Pngtree\u2014ink blot material_4379940_112"
+  - first:
+      213: 4125069898619805885
+    second: "\u2014Pngtree\u2014ink blot material_4379940_113"
+  - first:
+      213: -7225799907001111108
+    second: "\u2014Pngtree\u2014ink blot material_4379940_114"
+  - first:
+      213: -3550829448120389627
+    second: "\u2014Pngtree\u2014ink blot material_4379940_115"
+  - first:
+      213: 3921270446364321879
+    second: "\u2014Pngtree\u2014ink blot material_4379940_116"
+  - first:
+      213: 4826169489397071994
+    second: "\u2014Pngtree\u2014ink blot material_4379940_117"
+  - first:
+      213: 1014451675861415342
+    second: "\u2014Pngtree\u2014ink blot material_4379940_118"
+  - first:
+      213: -1170706069720598973
+    second: "\u2014Pngtree\u2014ink blot material_4379940_119"
+  - first:
+      213: 4029821826052654717
+    second: "\u2014Pngtree\u2014ink blot material_4379940_120"
+  - first:
+      213: 5497977959551341193
+    second: "\u2014Pngtree\u2014ink blot material_4379940_121"
+  - first:
+      213: -8697351209370030866
+    second: "\u2014Pngtree\u2014ink blot material_4379940_122"
+  - first:
+      213: 7795165375552145911
+    second: "\u2014Pngtree\u2014ink blot material_4379940_123"
+  - first:
+      213: 2757320539000935349
+    second: "\u2014Pngtree\u2014ink blot material_4379940_124"
+  - first:
+      213: -4244572642930007123
+    second: "\u2014Pngtree\u2014ink blot material_4379940_125"
+  - first:
+      213: -70640850319175647
+    second: "\u2014Pngtree\u2014ink blot material_4379940_126"
+  - first:
+      213: -8475162207113469731
+    second: "\u2014Pngtree\u2014ink blot material_4379940_127"
+  - first:
+      213: -7906200259358549026
+    second: "\u2014Pngtree\u2014ink blot material_4379940_128"
+  - first:
+      213: 1716210722644203431
+    second: "\u2014Pngtree\u2014ink blot material_4379940_129"
+  - first:
+      213: -5052329492138907662
+    second: "\u2014Pngtree\u2014ink blot material_4379940_130"
+  - first:
+      213: 1713783472579363354
+    second: "\u2014Pngtree\u2014ink blot material_4379940_131"
+  - first:
+      213: 960666516611321896
+    second: "\u2014Pngtree\u2014ink blot material_4379940_132"
+  - first:
+      213: -5891745651324319620
+    second: "\u2014Pngtree\u2014ink blot material_4379940_133"
+  - first:
+      213: -956141051631536763
+    second: "\u2014Pngtree\u2014ink blot material_4379940_134"
+  - first:
+      213: 6773970682279291951
+    second: "\u2014Pngtree\u2014ink blot material_4379940_135"
+  - first:
+      213: 1777554113733723285
+    second: "\u2014Pngtree\u2014ink blot material_4379940_136"
+  - first:
+      213: -4385874679094663213
+    second: "\u2014Pngtree\u2014ink blot material_4379940_137"
+  - first:
+      213: -5016928720646915316
+    second: "\u2014Pngtree\u2014ink blot material_4379940_138"
+  - first:
+      213: -7508843986863908045
+    second: "\u2014Pngtree\u2014ink blot material_4379940_139"
+  - first:
+      213: -4733075255255156557
+    second: "\u2014Pngtree\u2014ink blot material_4379940_140"
+  - first:
+      213: 947449708109521201
+    second: "\u2014Pngtree\u2014ink blot material_4379940_141"
+  - first:
+      213: 2011193867308590152
+    second: "\u2014Pngtree\u2014ink blot material_4379940_142"
+  - first:
+      213: 4522069659578185874
+    second: "\u2014Pngtree\u2014ink blot material_4379940_143"
+  - first:
+      213: -7465358653517794385
+    second: "\u2014Pngtree\u2014ink blot material_4379940_144"
+  - first:
+      213: -2035363951561089796
+    second: "\u2014Pngtree\u2014ink blot material_4379940_145"
+  - first:
+      213: 5648950569869658001
+    second: "\u2014Pngtree\u2014ink blot material_4379940_146"
+  - first:
+      213: 11050329049807994
+    second: "\u2014Pngtree\u2014ink blot material_4379940_147"
+  - first:
+      213: -2338813063640039100
+    second: "\u2014Pngtree\u2014ink blot material_4379940_148"
+  - first:
+      213: 3449615103711322238
+    second: "\u2014Pngtree\u2014ink blot material_4379940_149"
+  - first:
+      213: -7715845247622588796
+    second: "\u2014Pngtree\u2014ink blot material_4379940_150"
+  - first:
+      213: 6694344846503016895
+    second: "\u2014Pngtree\u2014ink blot material_4379940_151"
+  - first:
+      213: 5982439381013492935
+    second: "\u2014Pngtree\u2014ink blot material_4379940_152"
+  - first:
+      213: 8011578509374756342
+    second: "\u2014Pngtree\u2014ink blot material_4379940_153"
+  - first:
+      213: 3093174172406871483
+    second: "\u2014Pngtree\u2014ink blot material_4379940_154"
+  - first:
+      213: 7928712318889043648
+    second: "\u2014Pngtree\u2014ink blot material_4379940_155"
+  - first:
+      213: 2973613314156141518
+    second: "\u2014Pngtree\u2014ink blot material_4379940_156"
+  - first:
+      213: 158828632095896296
+    second: "\u2014Pngtree\u2014ink blot material_4379940_157"
+  - first:
+      213: 8853366916218178648
+    second: "\u2014Pngtree\u2014ink blot material_4379940_158"
+  - first:
+      213: 311666041859519120
+    second: "\u2014Pngtree\u2014ink blot material_4379940_159"
+  - first:
+      213: 2550893955565649262
+    second: "\u2014Pngtree\u2014ink blot material_4379940_160"
+  - first:
+      213: 7711839115570334819
+    second: "\u2014Pngtree\u2014ink blot material_4379940_161"
+  - first:
+      213: 517183196331745550
+    second: "\u2014Pngtree\u2014ink blot material_4379940_162"
+  - first:
+      213: 9100596016542527314
+    second: "\u2014Pngtree\u2014ink blot material_4379940_163"
+  - first:
+      213: -4642509466260617375
+    second: "\u2014Pngtree\u2014ink blot material_4379940_164"
+  - first:
+      213: -4224919653544894170
+    second: "\u2014Pngtree\u2014ink blot material_4379940_165"
+  - first:
+      213: -1102806958594615087
+    second: "\u2014Pngtree\u2014ink blot material_4379940_166"
+  - first:
+      213: -8500103881594810172
+    second: "\u2014Pngtree\u2014ink blot material_4379940_167"
+  - first:
+      213: 7001569003149793674
+    second: "\u2014Pngtree\u2014ink blot material_4379940_168"
+  - first:
+      213: 6868340766354375413
+    second: "\u2014Pngtree\u2014ink blot material_4379940_169"
+  - first:
+      213: 286913373736715186
+    second: "\u2014Pngtree\u2014ink blot material_4379940_170"
+  - first:
+      213: 8093565564176654486
+    second: "\u2014Pngtree\u2014ink blot material_4379940_171"
+  - first:
+      213: -7060643076768363685
+    second: "\u2014Pngtree\u2014ink blot material_4379940_172"
+  - first:
+      213: 8768573598882080850
+    second: "\u2014Pngtree\u2014ink blot material_4379940_173"
+  - first:
+      213: -3373608759707326755
+    second: "\u2014Pngtree\u2014ink blot material_4379940_174"
+  - first:
+      213: -4373056742254367913
+    second: "\u2014Pngtree\u2014ink blot material_4379940_175"
+  - first:
+      213: 5367328382450906441
+    second: "\u2014Pngtree\u2014ink blot material_4379940_176"
+  - first:
+      213: -426138496038501242
+    second: "\u2014Pngtree\u2014ink blot material_4379940_177"
+  - first:
+      213: 562053305818526380
+    second: "\u2014Pngtree\u2014ink blot material_4379940_178"
+  - first:
+      213: 5021838216667404776
+    second: "\u2014Pngtree\u2014ink blot material_4379940_179"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: InkStains_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2738
+        width: 1536
+        height: 1369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b512f9cbd14d4d849b08aeb227a8cd89
+      internalID: -1403958347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkStains_1
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 2738
+        width: 1536
+        height: 1369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a449758f815ec394eb3d35762cb69340
+      internalID: -1536739458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkStains_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1369
+        width: 1536
+        height: 1369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f3307d88767aa84e940dcffabb539e3
+      internalID: 1367385059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkStains_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1369
+        width: 1536
+        height: 1369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dba3acc9a1e9cb4db3043270e9685c2
+      internalID: 277426098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkStains_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1536
+        height: 1369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e55408d09351b542928809dbd6ca1f4
+      internalID: 1743681717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InkStains_5
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 1536
+        height: 1369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0897a37a0fe94c48917f5143d7cc4bd
+      internalID: 1928067542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 264d97a61cb64b4478b081a5c0eced7e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":3.0},"gridSpriteSize":{"x":1536.0,"y":1369.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      - key: SpriteEditor.SliceOnImport
+        value: False
+    nameFileIdTable:
+      InkStains_0: -1403958347
+      InkStains_1: -1536739458
+      InkStains_2: 1367385059
+      InkStains_3: 277426098
+      InkStains_4: 1743681717
+      InkStains_5: 1928067542
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

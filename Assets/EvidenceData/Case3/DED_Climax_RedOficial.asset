@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5027245b3db086547846b12a4825367d, type: 3}
+  m_Name: DED_Climax_RedOficial
+  m_EditorClassIdentifier: Assembly-CSharp::DeductionRule
+  requiredEvidences:
+  - {fileID: 11400000, guid: 64c924aa725dc1443bfbc187adbd84d9, type: 2}
+  - {fileID: 11400000, guid: 72b29faf1a851044e9a9142376e23d40, type: 2}
+  - {fileID: 11400000, guid: 6c76f8df60442524b89c4dc69ce7ef94, type: 2}
+  partialHints:
+  - evidenceA: {fileID: 11400000, guid: 64c924aa725dc1443bfbc187adbd84d9, type: 2}
+    evidenceB: {fileID: 11400000, guid: 72b29faf1a851044e9a9142376e23d40, type: 2}
+    text: "La patente y el registro oficial de la fuerza coinciden, pero falta el
+      informe m\xE9dico que certifique el modo de la ejecuci\xF3n. Est\xE1s bien
+      con el veh\xEDculo y la vinculaci\xF3n estatal."
+  - evidenceA: {fileID: 11400000, guid: 72b29faf1a851044e9a9142376e23d40, type: 2}
+    evidenceB: {fileID: 11400000, guid: 6c76f8df60442524b89c4dc69ce7ef94, type: 2}
+    text: "La causa de muerte y los veh\xEDculos de la superintendencia tienen relaci\xF3n,
+      pero te falta la prueba visual en la zona. Est\xE1s bien con el informe m\xE9dico
+      y la flota."
+  - evidenceA: {fileID: 11400000, guid: 64c924aa725dc1443bfbc187adbd84d9, type: 2}
+    evidenceB: {fileID: 11400000, guid: 6c76f8df60442524b89c4dc69ce7ef94, type: 2}
+    text: "La ejecuci\xF3n a quemarropa y el auto en la zona cierran, pero falta
+      cruzarlo con los papeles oficiales de la flota. Est\xE1s bien con la foto y
+      la autopsia."
+  resultDescription: "Incre\xEDble. La patente fotografiada pertenece a un <keyword>Ford
+    V8</keyword> sin identificaci\xF3n, operado por una <keyword>patota clandestina</keyword>.
+    Queda anulada la versi\xF3n del enfrentamiento."
+  invalidatedEvidence: {fileID: 11400000, guid: 18273ca0756a0284cae1c7e9a451032f, type: 2}
+  newUnlockedEvidence: {fileID: 0}

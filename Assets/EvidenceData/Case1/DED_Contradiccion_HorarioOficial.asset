@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5027245b3db086547846b12a4825367d, type: 3}
+  m_Name: DED_Contradiccion_HorarioOficial
+  m_EditorClassIdentifier: Assembly-CSharp::DeductionRule
+  requiredEvidences:
+  - {fileID: 11400000, guid: 8c355582d76d89f46b834fe26e18e963, type: 2}
+  - {fileID: 11400000, guid: 0a4146f587195064eabcdbdef54adb4b, type: 2}
+  - {fileID: 11400000, guid: 8f707e90c18813b4880d33cc2414f6fb, type: 2}
+  partialHints:
+  - evidenceA: {fileID: 11400000, guid: 8c355582d76d89f46b834fe26e18e963, type: 2}
+    evidenceB: {fileID: 11400000, guid: 0a4146f587195064eabcdbdef54adb4b, type: 2}
+    text: "El reloj y el parte oficial coinciden en la contradicci\xF3n, pero te
+      falta el testimonio de la cuadra para fijar el entorno. Est\xE1s bien con la
+      hora del impacto y el documento."
+  - evidenceA: {fileID: 11400000, guid: 0a4146f587195064eabcdbdef54adb4b, type: 2}
+    evidenceB: {fileID: 11400000, guid: 8f707e90c18813b4880d33cc2414f6fb, type: 2}
+    text: "Los vecinos y el reloj marcan el pulso real de la noche, pero necesit\xE1s
+      el papel oficial para contrastar la mentira. Est\xE1s bien con el horario y
+      el testimonio."
+  - evidenceA: {fileID: 11400000, guid: 8c355582d76d89f46b834fe26e18e963, type: 2}
+    evidenceB: {fileID: 11400000, guid: 8f707e90c18813b4880d33cc2414f6fb, type: 2}
+    text: "El testimonio de la calle desmiente el acta, pero falta la prueba f\xEDsica
+      del da\xF1o material. Est\xE1s bien con el documento y los vecinos."
+  resultDescription: Excelente. El impacto del secuestro detuvo el reloj a las <keyword>20:45
+    hs</keyword>, desmintiendo el horario fijado en el <keyword>acta policial</keyword>.
+    El acta queda descartada.
+  invalidatedEvidence: {fileID: 11400000, guid: 8c355582d76d89f46b834fe26e18e963, type: 2}
+  newUnlockedEvidence: {fileID: 0}

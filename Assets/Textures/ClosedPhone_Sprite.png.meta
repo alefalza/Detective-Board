@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: ebbb03f23418b0e4e914104c53352646
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4812043607596097156
+    second: OldPhone_Closed_0
+  - first:
+      213: -4776101874376844004
+    second: OldPhone_Closed_1
+  - first:
+      213: 7803264747401596285
+    second: OldPhone_Closed_2
+  - first:
+      213: 5938408014856218507
+    second: OldPhone_Closed_3
+  - first:
+      213: 1227175917172263655
+    second: OldPhone_Closed_4
+  - first:
+      213: 545380489192286800
+    second: OldPhone_Closed_5
+  - first:
+      213: -5156103790588574277
+    second: OldPhone_Closed_6
+  - first:
+      213: -417287237970280579
+    second: OldPhone_Closed_7
+  - first:
+      213: 5136156251723114944
+    second: OldPhone_Closed_8
+  - first:
+      213: 4206618079135926776
+    second: OldPhone_Closed_9
+  - first:
+      213: -4177794833815999925
+    second: OldPhone_Closed_10
+  - first:
+      213: -1987359807866519163
+    second: OldPhone_Closed_11
+  - first:
+      213: -5197849751969716608
+    second: OldPhone_Closed_12
+  - first:
+      213: 6458125400777254163
+    second: OldPhone_Closed_13
+  - first:
+      213: 563290577605047824
+    second: OldPhone_Closed_14
+  - first:
+      213: 1556592607803698037
+    second: OldPhone_Closed_15
+  - first:
+      213: -4784144402500147172
+    second: OldPhone_Closed_16
+  - first:
+      213: -2456237310333963660
+    second: OldPhone_Closed_17
+  - first:
+      213: -8197415501579209923
+    second: OldPhone_Closed_18
+  - first:
+      213: -4398051044008370986
+    second: OldPhone_Closed_19
+  - first:
+      213: -74867298578682603
+    second: OldPhone_Closed_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OldPhone_Closed_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 267
+        width: 873
+        height: 730
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e54727a20d7c240800000000000000
+      internalID: 4812043607596097156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhone_Closed_1
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 974
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1dd0be66a0e7bdb0800000000000000
+      internalID: -4776101874376844004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhone_Closed_2
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 995
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7d433db1f3ca4c60800000000000000
+      internalID: 7803264747401596285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhone_Closed_3
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 980
+        width: 39
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8766d060a6796250800000000000000
+      internalID: 5938408014856218507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhone_Closed_4
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 982
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea87fbaefdc70110800000000000000
+      internalID: 1227175917172263655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhone_Closed_5
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 972
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a2cb55aa4919700800000000000000
+      internalID: 545380489192286800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhone_Closed_6
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 973
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb54ce0bbe6d178b0800000000000000
+      internalID: -5156103790588574277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhone_Closed_7
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 967
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7f3a7bc77f753af0800000000000000
+      internalID: -417287237970280579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhone_Closed_8
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 958
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c9abdef5ea474740800000000000000
+      internalID: 5136156251723114944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhone_Closed_9
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 936
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f902a8fad8e06a30800000000000000
+      internalID: 4206618079135926776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhone_Closed_10
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 937
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a6fe9cbbd7506c0800000000000000
+      internalID: -4177794833815999925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhone_Closed_11
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 942
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5814a33c8ca7b64e0800000000000000
+      internalID: -1987359807866519163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhone_Closed_12
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 927
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0862ef1a0378dd7b0800000000000000
+      internalID: -5197849751969716608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhone_Closed_13
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 922
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 315614cd5dedf9950800000000000000
+      internalID: 6458125400777254163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhone_Closed_14
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 918
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 016397fbbc531d700800000000000000
+      internalID: 563290577605047824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhone_Closed_15
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 924
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57b6328cab02a9510800000000000000
+      internalID: 1556592607803698037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhone_Closed_16
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 924
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c182ece630e4b9db0800000000000000
+      internalID: -4784144402500147172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhone_Closed_17
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 918
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 472bb711e21b9edd0800000000000000
+      internalID: -2456237310333963660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhone_Closed_18
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 894
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d333718780eec3e80800000000000000
+      internalID: -8197415501579209923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhone_Closed_19
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 911
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dc58d990ebf6f2c0800000000000000
+      internalID: -4398051044008370986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhone_Closed_20
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 898
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51daceea69406fef0800000000000000
+      internalID: -74867298578682603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      OldPhone_Closed_0: 4812043607596097156
+      OldPhone_Closed_1: -4776101874376844004
+      OldPhone_Closed_10: -4177794833815999925
+      OldPhone_Closed_11: -1987359807866519163
+      OldPhone_Closed_12: -5197849751969716608
+      OldPhone_Closed_13: 6458125400777254163
+      OldPhone_Closed_14: 563290577605047824
+      OldPhone_Closed_15: 1556592607803698037
+      OldPhone_Closed_16: -4784144402500147172
+      OldPhone_Closed_17: -2456237310333963660
+      OldPhone_Closed_18: -8197415501579209923
+      OldPhone_Closed_19: -4398051044008370986
+      OldPhone_Closed_2: 7803264747401596285
+      OldPhone_Closed_20: -74867298578682603
+      OldPhone_Closed_3: 5938408014856218507
+      OldPhone_Closed_4: 1227175917172263655
+      OldPhone_Closed_5: 545380489192286800
+      OldPhone_Closed_6: -5156103790588574277
+      OldPhone_Closed_7: -417287237970280579
+      OldPhone_Closed_8: 5136156251723114944
+      OldPhone_Closed_9: 4206618079135926776
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

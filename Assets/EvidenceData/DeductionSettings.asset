@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 309614787acb10d4dbf8b265896b5cbc, type: 3}
+  m_Name: DeductionSettings
+  m_EditorClassIdentifier: Assembly-CSharp::DeductionSettings
+  groupSize: 3
+  farText: "Todav\xEDa est\xE1s lejos..."
+  validatedPunchAmount: {x: 0.2, y: 0.2, z: 0}
+  validatedPunchTime: 1
+  validatedColor: {r: 0.78039217, g: 0.9137255, b: 0.7529412, a: 1}

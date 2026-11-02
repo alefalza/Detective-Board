@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 880b1bd7238d04143ac5a9d99c6d34a0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 593564352269375765
+    second: OldPhoneBlack_0
+  - first:
+      213: -1034352356834715917
+    second: OldPhoneBlack_1
+  - first:
+      213: -4354650088515840138
+    second: OldPhoneBlack_2
+  - first:
+      213: 7818242995655587730
+    second: OldPhoneBlack_3
+  - first:
+      213: -1438140096500084505
+    second: OldPhoneBlack_4
+  - first:
+      213: 1547068127592151249
+    second: OldPhoneBlack_5
+  - first:
+      213: 4757514198500175227
+    second: OldPhoneBlack_6
+  - first:
+      213: -3539631172679445289
+    second: OldPhoneBlack_7
+  - first:
+      213: 3998719682793025141
+    second: OldPhoneBlack_8
+  - first:
+      213: 4545741499831144330
+    second: OldPhoneBlack_9
+  - first:
+      213: 7852534107270968077
+    second: OldPhoneBlack_10
+  - first:
+      213: 6799682956368744111
+    second: OldPhoneBlack_11
+  - first:
+      213: -44986370038717965
+    second: OldPhoneBlack_12
+  - first:
+      213: -7115621342227474182
+    second: OldPhoneBlack_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OldPhoneBlack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 498
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 519d95032a3cc3800800000000000000
+      internalID: 593564352269375765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhoneBlack_1
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 422
+        width: 28
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6574ef20e35a1f0800000000000000
+      internalID: -1034352356834715917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhoneBlack_2
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 433
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 677d3e001dc2193c0800000000000000
+      internalID: -4354650088515840138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhoneBlack_3
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 424
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 297bcbbe49aff7c60800000000000000
+      internalID: 7818242995655587730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhoneBlack_4
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 428
+        width: 19
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e0dddaa333ba0ce0800000000000000
+      internalID: -1438140096500084505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhoneBlack_5
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 422
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d8757ce34a487510800000000000000
+      internalID: 1547068127592151249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhoneBlack_6
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 421
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7dea7705f5160240800000000000000
+      internalID: 4757514198500175227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhoneBlack_7
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 277
+        width: 8
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d4da84c334b0eec0800000000000000
+      internalID: -3539631172679445289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhoneBlack_8
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 315
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ead398d5e4e7730800000000000000
+      internalID: 3998719682793025141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhoneBlack_9
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 46
+        width: 46
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8fcf2a4fc7b51f30800000000000000
+      internalID: 4545741499831144330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhoneBlack_10
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 51
+        width: 24
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0376828a2ec9fc60800000000000000
+      internalID: 7852534107270968077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhoneBlack_11
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 50
+        width: 21
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae03af5f935d5e50800000000000000
+      internalID: 6799682956368744111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhoneBlack_12
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 51
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f1ab12822d206ff0800000000000000
+      internalID: -44986370038717965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldPhoneBlack_13
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 51
+        width: 51
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af8d754e61c304d90800000000000000
+      internalID: -7115621342227474182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      OldPhoneBlack_0: 593564352269375765
+      OldPhoneBlack_1: -1034352356834715917
+      OldPhoneBlack_10: 7852534107270968077
+      OldPhoneBlack_11: 6799682956368744111
+      OldPhoneBlack_12: -44986370038717965
+      OldPhoneBlack_13: -7115621342227474182
+      OldPhoneBlack_2: -4354650088515840138
+      OldPhoneBlack_3: 7818242995655587730
+      OldPhoneBlack_4: -1438140096500084505
+      OldPhoneBlack_5: 1547068127592151249
+      OldPhoneBlack_6: 4757514198500175227
+      OldPhoneBlack_7: -3539631172679445289
+      OldPhoneBlack_8: 3998719682793025141
+      OldPhoneBlack_9: 4545741499831144330
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
