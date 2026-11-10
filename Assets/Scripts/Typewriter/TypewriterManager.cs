@@ -66,6 +66,7 @@ public class TypewriterManager : Singleton<TypewriterManager>
 
         _lastView = _gameViewManager.CurrentView;
         _settledView = _gameViewManager.CurrentView;
+        SetCloseTargetActive(false);
     }
 
     private void OnStateChanged(GameView view)
@@ -75,12 +76,10 @@ public class TypewriterManager : Singleton<TypewriterManager>
         _bypassTarget = null;
         _settledView = view;
 
-        // Ya en la Typewriter, sigue de largo hacia el otro extremo
         if (target == GameView.Paper) _gameViewManager.SwitchToPaper();
         else if (target == GameView.Corkboard) _gameViewManager.SwitchToCorkboard();
     }
 
-    // Corkboard → Typewriter sigue al Paper; Paper → Typewriter sigue al Corkboard
     private GameView? GetBypassTarget(GameView newView)
     {
         if (!bypassTypewriterView || newView != GameView.Typewriter) return null;
@@ -90,16 +89,22 @@ public class TypewriterManager : Singleton<TypewriterManager>
         return null;
     }
 
+    private void SetCloseTargetActive(bool active)
+    {
+        if (paperCloseTarget != null) paperCloseTarget.gameObject.SetActive(active);
+    }
+
     private void OnTransitionStarted(GameView newView)
     {
         _bypassTarget = GetBypassTarget(newView);
+        bool open = newView == GameView.Paper;
 
         if (newView == GameView.Paper ||
             _lastView == GameView.Paper && newView == GameView.Typewriter)
         {
             _lastView = newView;
 
-            bool open = newView == GameView.Paper;
+            open = newView == GameView.Paper;
 
             if (open)
             {
@@ -110,6 +115,8 @@ public class TypewriterManager : Singleton<TypewriterManager>
             paperUI.ScaleCenter(open);
             paperUI.FadeCenter(open);
         }
+
+        SetCloseTargetActive(open);
     }
 
     private void Update()

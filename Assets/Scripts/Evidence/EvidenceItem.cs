@@ -28,6 +28,9 @@ public class EvidenceItem : BaseDraggable
     public EvidenceData Data => data;
     public bool IsInvalidated { get; private set; }
 
+    // Si se arrastrara durante el punch, BaseDraggable guardaría la escala a mitad de la animación
+    protected override bool CanDrag => !_view.IsSpawnPunching;
+
     private void Awake()
     {
         _view = GetComponent<EvidenceItemView>();
@@ -61,6 +64,11 @@ public class EvidenceItem : BaseDraggable
 
     public void MarkValidated(Vector3 punchAmount, float punchTime, Color color)
         => _view.PlayValidatedFeedback(punchAmount, punchTime, color);
+
+    public void PlaySpawnFeedback(Vector3 punchAmount, float punchTime)
+        => _view.PlaySpawnFeedback(punchAmount, punchTime);
+
+    public void ResolveOverlap() => _overlapResolver.Resolve();
 
     // ── Drag (hooks de BaseDraggable) ────────────────────────────────
 

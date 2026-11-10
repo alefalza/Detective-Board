@@ -9,6 +9,7 @@ public enum GameCursorType
     Hover,
     Grab,
     Magnifier,
+    Mark,
     Pin
 }
 

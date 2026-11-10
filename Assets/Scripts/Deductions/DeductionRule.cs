@@ -31,11 +31,11 @@ public class DeductionRule : ScriptableObject
     [Header("Resultado (con <keyword>…</keyword> para las palabras clave)")]
     [TextArea(2, 4)] [SerializeField] private string resultDescription;
     [SerializeField] private EvidenceData invalidatedEvidence;
-    [SerializeField] private EvidenceData newUnlockedEvidence;
+    [SerializeField] private InspectableData newUnlockedInspectable;
 
     public string ResultDescription => resultDescription;
     public EvidenceData InvalidatedEvidence => invalidatedEvidence;
-    public EvidenceData NewUnlockedEvidence => newUnlockedEvidence;
+    public InspectableData NewUnlockedInspectable => newUnlockedInspectable;
 
     // Cuántas de las evidencias requeridas están presentes en el grupo
     public int CountMatches(List<EvidenceData> group)

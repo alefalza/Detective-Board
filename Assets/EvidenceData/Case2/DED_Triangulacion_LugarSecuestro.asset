@@ -33,4 +33,4 @@ MonoBehaviour:
     que la v\xEDctima aguardaba la <keyword>L\xEDnea 217</keyword> cuando fue interceptada
     en la <keyword>v\xEDa p\xFAblica</keyword>."
   invalidatedEvidence: {fileID: 11400000, guid: ca6c248cc8ed29745b87d892f615b9d7, type: 2}
-  newUnlockedEvidence: {fileID: 0}
+  newUnlockedInspectable: {fileID: 11400000, guid: 09a5500e34990824ba36a50acae1b5ae, type: 2}

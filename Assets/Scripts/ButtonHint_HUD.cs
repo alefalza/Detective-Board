@@ -6,7 +6,8 @@ using EaseType = iTween.EaseType;
 [RequireComponent(typeof(ButtonScaler_UI))]
 public class ButtonHint_HUD : MonoBehaviour
 {
-    [SerializeField] private PendingKeywordsTracker tracker;
+    [SerializeField] private PendingTracker tracker;
+    [SerializeField] private DeductionPhoneBridge phoneBridge;
     [SerializeField] private GameView[] activeViews = { GameView.Corkboard };
 
     [Header("Heartbeat Settings")]
@@ -54,6 +55,7 @@ public class ButtonHint_HUD : MonoBehaviour
         view.StateChanged += OnStateChanged;
         
         if (tracker != null) tracker.PendingChanged += OnPendingChanged;
+        if (phoneBridge != null) phoneBridge.ResolveFinished += Refresh;
 
         Refresh();
     }
@@ -75,9 +77,12 @@ public class ButtonHint_HUD : MonoBehaviour
 
     private void Refresh()
     {
+        bool isResolving = phoneBridge != null && phoneBridge.IsResolving;
+
         bool shouldShow = tracker != null &&
                           tracker.HasPending &&
                           !_isTransitioning &&
+                          !isResolving &&
                           Array.IndexOf(activeViews, _settledView) >= 0;
 
         if (shouldShow == _isShowing) return;
@@ -146,5 +151,6 @@ public class ButtonHint_HUD : MonoBehaviour
         }
 
         if (tracker != null) tracker.PendingChanged -= OnPendingChanged;
+        if (phoneBridge != null) phoneBridge.ResolveFinished -= Refresh;
     }    
 }

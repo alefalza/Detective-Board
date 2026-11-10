@@ -35,4 +35,4 @@ MonoBehaviour:
     hs</keyword>, desmintiendo el horario fijado en el <keyword>acta policial</keyword>.
     El acta queda descartada.
   invalidatedEvidence: {fileID: 11400000, guid: 8c355582d76d89f46b834fe26e18e963, type: 2}
-  newUnlockedEvidence: {fileID: 0}
+  newUnlockedInspectable: {fileID: 11400000, guid: 666c2040693b87248924e973946cfadc, type: 2}

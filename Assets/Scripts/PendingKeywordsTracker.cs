@@ -1,33 +1,30 @@
-using System;
-using UnityEngine;
-
-public class PendingKeywordsTracker : MonoBehaviour
+public class PendingKeywordsTracker : PendingTracker
 {
-    [SerializeField] private ArticleValidator article;
-
-    public bool HasPending { get; private set; }
-
-    public event Action<bool> PendingChanged;
+    private int _seenCount;
 
     private void Start()
     {
         TypewriterManager.Instance.KeywordAdded += Refresh;
-        article.PlacementChanged += Refresh;
+        GameViewManager.Instance.StateChanged += OnViewChanged;
         Refresh();
     }
 
+    private void OnViewChanged(GameView view) => Refresh();
+
     private void Refresh()
     {
-        bool pending = TypewriterManager.Instance.AvailableKeywords.Count > article.PlacedCount;
-        if (pending == HasPending) return;
+        int available = TypewriterManager.Instance.AvailableKeywords.Count;
 
-        HasPending = pending;
-        PendingChanged?.Invoke(pending);
+        // En la vista Paper, todas las keywords disponibles cuentan como vistas
+        if (GameViewManager.Instance.CurrentView == GameView.Paper)
+            _seenCount = available;
+
+        SetPending(available > _seenCount);
     }
 
     private void OnDestroy()
     {
         if (TypewriterManager.Instance != null) TypewriterManager.Instance.KeywordAdded -= Refresh;
-        if (article != null) article.PlacementChanged -= Refresh;
+        if (GameViewManager.Instance != null) GameViewManager.Instance.StateChanged -= OnViewChanged;
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -13,6 +14,11 @@ public class DeductionPhoneBridge : MonoBehaviour
 
     private DeductionResult? _pending;
     private bool _textTaken;
+
+    // true desde que se presenta una deducción hasta que termina la animación de las pistas validadas
+    public bool IsResolving { get; private set; }
+
+    public event Action ResolveFinished;
 
     private void Start()
     {
@@ -32,6 +38,7 @@ public class DeductionPhoneBridge : MonoBehaviour
 
         _pending = result;
         _textTaken = false;
+        IsResolving = true;
         view.SwitchToPhone();
         return true;
     }
@@ -58,21 +65,24 @@ public class DeductionPhoneBridge : MonoBehaviour
         _pending = null;
         _textTaken = false;
 
-        if (applyDelay <= 0f)
-            deductions.Apply(result);
-        else
-            StartCoroutine(ApplyAfterDelay(result));
+        StartCoroutine(ApplyRoutine(result));
     }
 
-    private IEnumerator ApplyAfterDelay(DeductionResult result)
+    private IEnumerator ApplyRoutine(DeductionResult result)
     {
-        // Mientras se espera no se puede consultar ni cambiar de vista
+        // Mientras se espera y se anima no se puede consultar ni cambiar de vista
         GameViewManager view = GameViewManager.Instance;
         view.BeginSequence();
 
-        yield return new WaitForSeconds(applyDelay);
+        if (applyDelay > 0f) yield return new WaitForSeconds(applyDelay);
+
+        deductions.Apply(result);
+
+        // El punch de las pistas ignora el timeScale, la espera también
+        if (result.IsNewSolve) yield return new WaitForSecondsRealtime(deductions.ValidatedAnimDuration);
 
         view.EndSequence();
-        deductions.Apply(result);
+        IsResolving = false;
+        ResolveFinished?.Invoke();
     }
 }

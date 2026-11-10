@@ -15,9 +15,15 @@ public class DeductionSettings : ScriptableObject
     [Tooltip("Color del fondo de las pistas una vez terminado el punch.")]
     [SerializeField] private Color validatedColor = new Color(0.6f, 0.6f, 0.6f, 1f);
 
+    [Header("Feedback de aparición (pistas nuevas)")]
+    [SerializeField] private Vector3 spawnPunchAmount = new Vector3(0.3f, 0.3f, 0f);
+    [Min(0.05f)] [SerializeField] private float spawnPunchTime = 0.5f;
+
     public int GroupSize => groupSize;
     public string FarText => farText;
     public Vector3 ValidatedPunchAmount => validatedPunchAmount;
     public float ValidatedPunchTime => validatedPunchTime;
     public Color ValidatedColor => validatedColor;
+    public Vector3 SpawnPunchAmount => spawnPunchAmount;
+    public float SpawnPunchTime => spawnPunchTime;
 }

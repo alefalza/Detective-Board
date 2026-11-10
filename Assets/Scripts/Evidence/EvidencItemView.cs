@@ -18,6 +18,7 @@ public class EvidenceItemView : MonoBehaviour
     [SerializeField] private float tiltSensitivity = 2f;
 
     private const string ValidatedTweenName = "EvidenceValidatedPunch";
+    private const string SpawnTweenName = "EvidenceSpawnPunch";
 
     private static int _topOrder;
 
@@ -25,6 +26,8 @@ public class EvidenceItemView : MonoBehaviour
     private Vector3 _originalShadowLocalPos;
     private Vector3 _lastPosition;
     private Color _pendingValidatedColor;
+
+    public bool IsSpawnPunching { get; private set; }
 
     private void Start()
     {
@@ -78,6 +81,23 @@ public class EvidenceItemView : MonoBehaviour
     }
 
     private void OnValidatedPunchComplete() => SetBackgroundColor(_pendingValidatedColor);
+
+    // Punch de escala al aparecer en el tablero
+    public void PlaySpawnFeedback(Vector3 punchAmount, float punchTime)
+    {
+        IsSpawnPunching = true;
+
+        iTween.PunchScale(gameObject, iTween.Hash(
+            "name", SpawnTweenName,
+            "amount", punchAmount,
+            "time", punchTime,
+            "ignoretimescale", true,
+            "oncomplete", nameof(OnSpawnPunchComplete),
+            "oncompletetarget", gameObject
+        ));
+    }
+
+    private void OnSpawnPunchComplete() => IsSpawnPunching = false;
 
     // ── Feedback del arrastre ────────────────────────────────────────
 

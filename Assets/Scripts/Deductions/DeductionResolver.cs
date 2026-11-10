@@ -12,14 +12,10 @@ public class DeductionResolver : MonoBehaviour
     [Header("Módulos")]
     [SerializeField] private ThreadController threads;
 
-    [Header("Prefabs")]
-    [SerializeField] private EvidenceItem evidenceItemPrefab;
-    [SerializeField] private Transform itemsContainer;
-
-    private readonly HashSet<EvidenceData> unlockedEvidence = new HashSet<EvidenceData>();
     private readonly HashSet<DeductionRule> resolvedRules = new HashSet<DeductionRule>();
 
     public int GroupSize => settings.GroupSize;
+    public float ValidatedAnimDuration => settings.ValidatedPunchTime;
 
     // ── Evaluación (no modifica estado) ──────────────────────────────
 
@@ -109,46 +105,7 @@ public class DeductionResolver : MonoBehaviour
             }
         }
 
-        if (rule.NewUnlockedEvidence != null)
-            SpawnEvidenceBetween(rule.NewUnlockedEvidence, result.Participants);
-    }
-
-    private void SpawnEvidenceBetween(EvidenceData newData, IReadOnlyList<EvidenceItem> participants)
-    {
-        if (evidenceItemPrefab == null)
-        {
-            Debug.LogWarning("DeductionResolver: falta asignar evidenceItemPrefab.");
-            return;
-        }
-
-        if (!unlockedEvidence.Add(newData)) return;
-
-        DropZone freeZone = FindFreeDropZone();
-        Vector3 spawnPosition = freeZone != null
-            ? freeZone.transform.position
-            : GetCenter(participants);
-
-        EvidenceItem newItem = Instantiate(evidenceItemPrefab, itemsContainer);
-        newItem.transform.SetPositionAndRotation(spawnPosition, Quaternion.identity);
-        newItem.SetupFromData(newData);
-        newItem.BringToFront();
-
-        if (freeZone != null) newItem.SnapToZone(freeZone);
-    }
-
-    private Vector3 GetCenter(IReadOnlyList<EvidenceItem> items)
-    {
-        Vector3 sum = Vector3.zero;
-        foreach (EvidenceItem item in items) sum += item.transform.position;
-        return sum / items.Count;
-    }
-
-    private DropZone FindFreeDropZone()
-    {
-        foreach (DropZone zone in FindObjectsByType<DropZone>(FindObjectsSortMode.InstanceID))
-        {
-            if (!zone.IsOccupied) return zone;
-        }
-        return null;
+        if (rule.NewUnlockedInspectable != null)
+            SceneryProgress.Instance.Unlock(rule.NewUnlockedInspectable);
     }
 }

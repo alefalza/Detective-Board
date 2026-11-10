@@ -34,6 +34,7 @@ public class GameMessageManager : Singleton<GameMessageManager>
     {
         canvasGroup.alpha = 0f;
         canvasGroup.blocksRaycasts = false;
+        bannerRect.gameObject.SetActive(false);
     }
 
     public void Show(GameMessage message, float? customDisplayTime = null, bool dismissOnClick = false, System.Action onClosed = null) =>
@@ -66,6 +67,7 @@ public class GameMessageManager : Singleton<GameMessageManager>
         bodyText.text = cleanText;
         bodyText.maxVisibleCharacters = 0;
         canvasGroup.blocksRaycasts = true;
+        bannerRect.gameObject.SetActive(true);
 
         yield return Fade(0f, 1f, fadeInDuration);
         yield return typewriter.Play(bodyText, dismissOnClick ? IsBannerClicked : null);
@@ -87,6 +89,7 @@ public class GameMessageManager : Singleton<GameMessageManager>
             );
         }
 
+        bannerRect.gameObject.SetActive(false);
         canvasGroup.blocksRaycasts = false;
         _activeCoroutine = null;
         FlushPendingOnClosed();
