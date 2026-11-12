@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63c57e9d5549bf84f985601096cf61bd, type: 3}
+  m_Name: AutopsyInspectable
+  m_EditorClassIdentifier: Assembly-CSharp::InspectableData
+  title: "Dictamen M\xE9dico Clandestino"
+  description: "Disparos a quemarropa. Murieron horas despu\xE9s."
+  image: {fileID: 21300000, guid: 1b9847ba64d93754799e737cc562e420, type: 3}
+  evidence: {fileID: 11400000, guid: 6c76f8df60442524b89c4dc69ce7ef94, type: 2}

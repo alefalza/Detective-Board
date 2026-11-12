@@ -1,11 +1,17 @@
+using UnityEngine;
+
 public class PendingKeywordsTracker : PendingTracker
 {
+    [Tooltip("El hint no se muestra hasta que el botón de Typewriter esté habilitado.")]
+    [SerializeField] private KeywordUnlockTracker unlockTracker;
+
     private int _seenCount;
 
     private void Start()
     {
         TypewriterManager.Instance.KeywordAdded += Refresh;
         GameViewManager.Instance.StateChanged += OnViewChanged;
+        unlockTracker.Completed += Refresh;
         Refresh();
     }
 
@@ -19,12 +25,13 @@ public class PendingKeywordsTracker : PendingTracker
         if (GameViewManager.Instance.CurrentView == GameView.Paper)
             _seenCount = available;
 
-        SetPending(available > _seenCount);
+        SetPending(unlockTracker.IsComplete && available > _seenCount);
     }
 
     private void OnDestroy()
     {
         if (TypewriterManager.Instance != null) TypewriterManager.Instance.KeywordAdded -= Refresh;
         if (GameViewManager.Instance != null) GameViewManager.Instance.StateChanged -= OnViewChanged;
+        if (unlockTracker != null) unlockTracker.Completed -= Refresh;
     }
 }

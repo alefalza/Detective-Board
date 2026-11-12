@@ -22,6 +22,9 @@ public class TypewriterManager : Singleton<TypewriterManager>
     [Tooltip("Si está activo, la vista Typewriter es solo de paso: Corkboard → Typewriter → Paper al entrar, y Paper → Typewriter → Corkboard al salir.")]
     [SerializeField] private bool bypassTypewriterView = true;
 
+    [Tooltip("Si está desactivado, una vez en el Paper no se puede salir: el artículo es el cierre del juego.")]
+    [SerializeField] private bool allowClosePaper = false;
+
     private List<string> _availableKeywords = new List<string>();
     private GameCursorType? _hoverCursor;   // cursor que este manager tiene pedido (null = ninguno)
     private readonly List<RaycastResult> _raycastResults = new List<RaycastResult>();
@@ -116,21 +119,24 @@ public class TypewriterManager : Singleton<TypewriterManager>
             paperUI.FadeCenter(open);
         }
 
-        SetCloseTargetActive(open);
+        SetCloseTargetActive(open && allowClosePaper);
     }
 
     private void Update()
     {
+        GameView activeView = _gameViewManager != null ? _gameViewManager.CurrentView : GameView.Corkboard;
+        bool inPaper = activeView == GameView.Paper;
+
         if (_gameViewManager == null
-            || _gameViewManager.CurrentView == GameView.Corkboard
-            || _gameViewManager.IsTransitioning)
+            || (activeView != GameView.Typewriter && !inPaper)
+            || _gameViewManager.IsTransitioning
+            || (inPaper && !allowClosePaper))
         {
             SetHover(null);
             return;
         }
 
-        GameView current = _gameViewManager.CurrentView;
-        bool inPaper = current == GameView.Paper;
+        GameView current = activeView;
 
         // En Paper se cierra clickeando la otra imagen; en el resto, el papel abre
         bool hovering = inPaper ? IsPointerOverCloseTarget() : IsPointerOverPaperHotspot();

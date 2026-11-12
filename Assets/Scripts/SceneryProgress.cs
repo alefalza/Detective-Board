@@ -8,6 +8,7 @@ public class SceneryProgress : Singleton<SceneryProgress>
 {
     [SerializeField] private SceneryViewerSettings settings;
     [SerializeField] private EvidenceSpawner evidenceSpawner;
+    [SerializeField] private AudioSource revealAudioSource;
 
     private SceneryInspectable[] _inspectables;
 
@@ -29,8 +30,15 @@ public class SceneryProgress : Singleton<SceneryProgress>
     {
         if (view != GameView.Scenery) return;
 
+        bool revealedAny = false;
         foreach (SceneryInspectable inspectable in _inspectables)
-            inspectable.TryReveal();
+        {
+            if (inspectable.TryReveal()) revealedAny = true;
+        }
+
+        // Un solo sonido aunque aparezcan varios a la vez (ej. los dos policías)
+        if (revealedAny && settings.RevealClip != null)
+            revealAudioSource.PlayOneShot(settings.RevealClip);
     }
 
     public void Unlock(InspectableData data)
@@ -53,10 +61,16 @@ public class SceneryProgress : Singleton<SceneryProgress>
         if (unlockedAny) InspectableUnlocked?.Invoke();
     }
 
-    // true solo la primera vez que el inspectable entrega su pista
-    public bool CollectEvidence(InspectableData data)
+    // true si el inspectable tiene una pista que todavía no se archivó
+    public bool CanArchive(InspectableData data)
     {
-        return data.Evidence != null && evidenceSpawner.TryQueue(data.Evidence);
+        return data.Evidence != null && !evidenceSpawner.WasQueued(data.Evidence);
+    }
+
+    // La pista se instancia en el tablero al volver al corcho
+    public void Archive(InspectableData data)
+    {
+        if (CanArchive(data)) evidenceSpawner.TryQueue(data.Evidence);
     }
 
     private void OnDestroy()

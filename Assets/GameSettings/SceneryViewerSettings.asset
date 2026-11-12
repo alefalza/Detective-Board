@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f40205ba8b9fd546a18fbc670d3c277, type: 3}
   m_Name: SceneryViewerSettings
   m_EditorClassIdentifier: Assembly-CSharp::SceneryViewerSettings
-  slideDuration: 0.45
-  slideEase: 5
+  revealDuration: 1.5
+  revealClip: {fileID: 8300000, guid: 63eda5e5c3810344b9c78665e0ef53d7, type: 3}
+  peekRadius: 0.8
+  peekSoftness: 0.5
+  peekMinAlpha: 0.15
+  peekFadeDuration: 0.2
   windowDuration: 0.35
   windowOpenEase: 27
   windowCloseEase: 26
-  revealDuration: 1.5
+  archiveLabel: Archivar
+  closeLabel: Cerrar
+  archiveClip: {fileID: 8300000, guid: cd03d91afcd85414d819a7e01ae75f16, type: 3}

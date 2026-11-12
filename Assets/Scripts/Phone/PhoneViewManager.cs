@@ -83,6 +83,10 @@ public class PhoneViewManager : MonoBehaviour
         yield return PlayLineClip(settings.DialClip, settings.DialDuration);
         yield return PlayLineClip(settings.ToneClip, settings.ToneDuration);
 
+        // Atienden
+        if (!_skipRequested) PlayOneShot(settings.AnswerClip);
+        yield return WaitOrSkip(settings.AnswerDuration + settings.AnswerDelay);
+
         // Libreta
         if (!_skipRequested)
         {

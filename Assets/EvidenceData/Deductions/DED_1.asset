@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5027245b3db086547846b12a4825367d, type: 3}
+  m_Name: DED_1
+  m_EditorClassIdentifier: Assembly-CSharp::DeductionRule
+  requiredEvidences:
+  - {fileID: 11400000, guid: d020da565dcca04478c2ad00ddcbdcb6, type: 2}
+  - {fileID: 11400000, guid: c78bf4403404be14ca3c414ed64f845c, type: 2}
+  - {fileID: 11400000, guid: 4517b90e739a742458e4a3954260997c, type: 2}
+  partialHints:
+  - evidenceA: {fileID: 11400000, guid: d020da565dcca04478c2ad00ddcbdcb6, type: 2}
+    evidenceB: {fileID: 11400000, guid: c78bf4403404be14ca3c414ed64f845c, type: 2}
+    text: "El boleto confirma la hora que dice la esposa. \xBFQui\xE9nes eran?"
+  - evidenceA: {fileID: 11400000, guid: d020da565dcca04478c2ad00ddcbdcb6, type: 2}
+    evidenceB: {fileID: 11400000, guid: 4517b90e739a742458e4a3954260997c, type: 2}
+    text: "Gente de trabajo que sali\xF3 a escuchar la pelea. \xBFA qu\xE9 hora lleg\xF3?"
+  - evidenceA: {fileID: 11400000, guid: c78bf4403404be14ca3c414ed64f845c, type: 2}
+    evidenceB: {fileID: 11400000, guid: 4517b90e739a742458e4a3954260997c, type: 2}
+    text: "Un obrero que lleg\xF3 en colectivo. \xBFA qu\xE9 iba?"
+  resultDescription: "No eran una c\xE9lula armada: eran <keyword>trabajadores</keyword>
+    del barrio que llegaron a las 20:47 para escuchar <keyword>la pelea</keyword>
+    por radio."
+  invalidatedEvidence: {fileID: 0}
+  newUnlockedInspectables:
+  - {fileID: 11400000, guid: 27efe9f8e93c3774fb84f878f9091b47, type: 2}

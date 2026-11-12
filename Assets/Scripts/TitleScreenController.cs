@@ -5,7 +5,18 @@ public class TitleScreenController : MonoBehaviour
 {
     [SerializeField] private string gameplaySceneName = "Gameplay";
 
+    [Header("Paneles de la libreta")]
+    [SerializeField] private GameObject mainPanel;
+    [SerializeField] private GameObject settingsPanel;
+    [SerializeField] private GameObject creditsPanel;
+
+    private void Start() => ShowPanel(mainPanel);
+
+    // Asignar en el OnClick de cada opción
     public void OnPlayClicked() => SceneManager.LoadScene(gameplaySceneName, LoadSceneMode.Single);
+    public void OnSettingsClicked() => ShowPanel(settingsPanel);
+    public void OnCreditsClicked() => ShowPanel(creditsPanel);
+    public void OnBackClicked() => ShowPanel(mainPanel);
 
     public void OnQuitClicked()
     {
@@ -14,5 +25,12 @@ public class TitleScreenController : MonoBehaviour
 #else
         Application.Quit();
 #endif
+    }
+
+    private void ShowPanel(GameObject panel)
+    {
+        mainPanel.SetActive(panel == mainPanel);
+        settingsPanel.SetActive(panel == settingsPanel);
+        creditsPanel.SetActive(panel == creditsPanel);
     }
 }

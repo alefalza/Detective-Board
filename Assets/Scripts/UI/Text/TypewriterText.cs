@@ -29,6 +29,14 @@ public class TypewriterText : MonoBehaviour
         _routine = StartCoroutine(Run(skipRequested));
     }
 
+    /// <summary>Muestra el texto completo, sin animación.</summary>
+    public void Show(string content)
+    {
+        Stop();
+        text.text = content;
+        text.maxVisibleCharacters = int.MaxValue;
+    }
+
     /// <summary>Corta la animación y muestra el texto completo.</summary>
     public void Complete()
     {

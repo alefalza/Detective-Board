@@ -13,13 +13,15 @@ public class InspectionWindow : Singleton<InspectionWindow>
     [SerializeField] private TextMeshProUGUI titleText;
     [SerializeField] private TextMeshProUGUI descriptionText;
     [SerializeField] private Image image;
-    [Tooltip("Aviso de que la pista se agregó al tablero. Solo se muestra la primera vez.")]
-    [SerializeField] private GameObject newEvidenceNotice;
+    [Tooltip("Texto del botón de cierre: \"Archivar\" o \"Cerrar\".")]
+    [SerializeField] private TextMeshProUGUI closeButtonLabel;
+    [SerializeField] private AudioSource archiveAudioSource;
 
     private const string ScaleTweenName = "InspectionWindowScale";
     private const string FadeTweenName = "InspectionWindowFade";
 
     private bool _isOpen;
+    private InspectableData _current;
 
     public bool IsOpen => _isOpen;
 
@@ -35,9 +37,12 @@ public class InspectionWindow : Singleton<InspectionWindow>
         window.localScale = Vector3.zero;
     }
 
-    public void Show(InspectableData data, bool isNewEvidence)
+    public void Show(InspectableData data)
     {
-        newEvidenceNotice.SetActive(isNewEvidence);
+        _current = data;
+        bool canArchive = SceneryProgress.Instance.CanArchive(data);
+        closeButtonLabel.text = canArchive ? settings.ArchiveLabel : settings.CloseLabel;
+
         titleText.text = data.Title;
         descriptionText.text = data.Description;
 
@@ -47,7 +52,19 @@ public class InspectionWindow : Singleton<InspectionWindow>
         SetOpen(true);
     }
 
-    // Asignar en el OnClick del fondo y del botón de cerrar
+    // Asignar en el OnClick del botón: archiva la pista si todavía no se archivó, y cierra
+    public void ArchiveAndClose()
+    {
+        if (_current != null && SceneryProgress.Instance.CanArchive(_current))
+        {
+            SceneryProgress.Instance.Archive(_current);
+            if (settings.ArchiveClip != null) archiveAudioSource.PlayOneShot(settings.ArchiveClip);
+        }
+
+        Close();
+    }
+
+    // Asignar en el OnClick del fondo: cierra sin archivar
     public void Close() => SetOpen(false);
 
     private void OnTransitionStarted(GameView view) => Close();

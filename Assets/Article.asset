@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d011349ef1414d4498255ec68dc6bd18, type: 3}
+  m_Name: Article
+  m_EditorClassIdentifier: Assembly-CSharp::ArticleData
+  variants:
+  - tone: {fileID: 11400000, guid: c24f2b16375f42e4880d1843aa1a774b, type: 2}
+    text: "La noche del 24 de mayo, dos <b>trabajadores</b> que se hab\xEDan reunido
+      para escuchar <b>la pelea</b> por radio fueron detenidos en su domicilio a
+      las 23:30. Seg\xFAn el acta, fue <b>la polic\xEDa</b> quien los retir\xF3 <b>con
+      vida</b>, <b>antes de la ley marcial</b>. Horas despu\xE9s, ambos aparecieron
+      <b>fusilados</b> en un descampado. La versi\xF3n oficial de un enfrentamiento
+      no coincide con estos registros."
+  - tone: {fileID: 11400000, guid: 3ceb71b201f464d4e8ffee5005bf8aca, type: 2}
+    text: "\xA1Masacre en la cocina! Dos <b>trabajadores</b> que solo quer\xEDan
+      escuchar <b>la pelea</b> fueron arrancados de su mesa a las 23:30 por <b>la
+      polic\xEDa</b>. \xA1Salieron <b>con vida</b> y amanecieron <b>fusilados</b>
+      en un basural! \xBFLo m\xE1s escandaloso? Los detuvieron <b>antes de la ley
+      marcial</b>. \xBFQui\xE9n dio la orden?"
+  - tone: {fileID: 11400000, guid: 951af51cb7ad6144b8b695d35cc499bb, type: 2}
+    text: "No hubo enfrentamiento. La noche del 24 de mayo, <b>la polic\xEDa</b>
+      irrumpi\xF3 en una cocina y se llev\xF3 <b>con vida</b> a dos <b>trabajadores</b>
+      que escuchaban <b>la pelea</b> por radio. Los detuvo a las 23:30, <b>antes
+      de la ley marcial</b> que despu\xE9s invoc\xF3 para justificarse. Horas m\xE1s
+      tarde, los dej\xF3 <b>fusilados</b> en un descampado. El parte oficial miente,
+      y sus propias actas lo prueban."

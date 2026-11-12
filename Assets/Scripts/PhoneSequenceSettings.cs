@@ -15,6 +15,12 @@ public class PhoneSequenceSettings : ScriptableObject
     [SerializeField] private AudioClip toneClip;
     [Min(0f)] [SerializeField] private float toneDuration = 2f;
 
+    [Header("Atender")]
+    [Tooltip("Suena apenas termina el tono.")]
+    [SerializeField] private AudioClip answerClip;
+    [Tooltip("Segundos entre que termina el clip de atender y empieza la escritura.")]
+    [Min(0f)] [SerializeField] private float answerDelay = 1f;
+
     [Header("Escritura en la libreta")]
     [Tooltip("Suena en loop mientras se escribe el texto.")]
     [SerializeField] private AudioClip mumblingClip;
@@ -30,6 +36,9 @@ public class PhoneSequenceSettings : ScriptableObject
     public float DialDuration => dialDuration;
     public AudioClip ToneClip => toneClip;
     public float ToneDuration => toneDuration;
+    public AudioClip AnswerClip => answerClip;
+    public float AnswerDuration => answerClip != null ? answerClip.length : 0f;
+    public float AnswerDelay => answerDelay;
     public AudioClip MumblingClip => mumblingClip;
     public float HangUpDelay => hangUpDelay;
 }

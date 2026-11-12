@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PhoneSequenceSettings
   pickUpClip: {fileID: 8300000, guid: 54d15a01d36cf054a8d839a46659ba9b, type: 3}
   hangUpClip: {fileID: 8300000, guid: 54d15a01d36cf054a8d839a46659ba9b, type: 3}
-  dialClip: {fileID: 8300000, guid: b5e9d03bb480d9d4791460b83438a2de, type: 3}
-  dialDuration: 4.4
+  dialClip: {fileID: 8300000, guid: 24320ce2695767b48b53bf0bbb2b6d8f, type: 3}
+  dialDuration: 2.7
   toneClip: {fileID: 8300000, guid: e896ca54f7b2d2e4b8678bdc55747907, type: 3}
-  toneDuration: 7.5
+  toneDuration: 4
+  answerClip: {fileID: 8300000, guid: f67765bc86bc74540846b8e5851e097b, type: 3}
+  answerDelay: 1
   mumblingClip: {fileID: 8300000, guid: 4d69fc36a3103a74899fba1eaec56f99, type: 3}
   hangUpDelay: 0.5

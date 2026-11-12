@@ -14,26 +14,32 @@ public class TextMeshProUIInteractive : MonoBehaviour, IPointerEnterHandler, IPo
     [Tooltip("Puedes arrastrar funciones directamente desde el Inspector")]
     [SerializeField] private UnityEvent onClickEvent;
 
-    private void Awake()
+    private void OnEnable()
     {
         if (underlineObject != null)
-            underlineObject.SetActive(false);
+            SetUnderlineActive(false);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (underlineObject != null)
-            underlineObject.SetActive(true);
+            SetUnderlineActive(true);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         if (underlineObject != null)
-            underlineObject.SetActive(false);
+            SetUnderlineActive(false);
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
         onClickEvent.Invoke();
+    }
+
+    private void SetUnderlineActive(bool active)
+    {
+        if (underlineObject != null)
+            underlineObject.SetActive(active);
     }
 }

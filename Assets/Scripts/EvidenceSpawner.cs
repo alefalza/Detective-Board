@@ -23,6 +23,8 @@ public class EvidenceSpawner : MonoBehaviour
         return true;
     }
 
+    public bool WasQueued(EvidenceData data) => _queuedOnce.Contains(data);
+
     private void OnViewChanged(GameView view)
     {
         if (view != GameView.Corkboard) return;

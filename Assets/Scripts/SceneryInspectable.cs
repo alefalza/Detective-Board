@@ -21,6 +21,14 @@ public class SceneryInspectable : MonoBehaviour, IPointerEnterHandler, IPointerE
     public InspectableData Data => data;
     public bool StartsUnlocked => startsUnlocked;
 
+    // Desbloqueado por una deducción y todavía sin brillar desde entonces
+    public bool IsNewlyUnlocked { get; private set; }
+
+    // Pista archivada; si no tiene pista, alcanza con haberlo abierto
+    public bool IsCollected => data.Evidence != null ? !SceneryProgress.Instance.CanArchive(data) : _wasOpened;
+
+    private bool _wasOpened;
+
     public bool IsSparkling
     {
         get
@@ -35,6 +43,7 @@ public class SceneryInspectable : MonoBehaviour, IPointerEnterHandler, IPointerE
 
     public void PlaySparkles(SparkleSettings settings)
     {
+        IsNewlyUnlocked = false;
         foreach (PointSparkle sparkle in sparkles) sparkle.Play(settings);
     }
 
@@ -55,17 +64,18 @@ public class SceneryInspectable : MonoBehaviour, IPointerEnterHandler, IPointerE
         _canvasGroup.blocksRaycasts = false;
         _revealDuration = revealDuration;
         _isPendingReveal = true;
+        IsNewlyUnlocked = true;
 
         gameObject.SetActive(true);
     }
 
-    // Se intenta al llegar a la Scenery View y al activarse la slide
-    public void TryReveal()
+    // Se intenta al llegar a la Scenery View. true si empezó a aparecer
+    public bool TryReveal()
     {
-        if (!_isPendingReveal || !gameObject.activeInHierarchy) return;
+        if (!_isPendingReveal || !gameObject.activeInHierarchy) return false;
 
         GameViewManager view = GameViewManager.Instance;
-        if (view.CurrentView != GameView.Scenery || view.IsTransitioning) return;
+        if (view.CurrentView != GameView.Scenery || view.IsTransitioning) return false;
 
         _isPendingReveal = false;
         _isRevealing = true;
@@ -81,6 +91,8 @@ public class SceneryInspectable : MonoBehaviour, IPointerEnterHandler, IPointerE
             "onupdate", nameof(OnRevealUpdate),
             "oncomplete", nameof(FinishReveal)
         ));
+
+        return true;
     }
 
     private void OnRevealUpdate(float alpha) => _canvasGroup.alpha = alpha;
@@ -106,8 +118,8 @@ public class SceneryInspectable : MonoBehaviour, IPointerEnterHandler, IPointerE
     {
         if (eventData.button != PointerEventData.InputButton.Left) return;
 
-        bool isNewEvidence = SceneryProgress.Instance.CollectEvidence(data);
-        InspectionWindow.Instance.Show(data, isNewEvidence);
+        _wasOpened = true;
+        InspectionWindow.Instance.Show(data);
     }
 
     // Al desactivarse la slide no llega OnPointerExit ni termina el fade

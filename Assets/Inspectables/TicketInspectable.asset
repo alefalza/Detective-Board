@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63c57e9d5549bf84f985601096cf61bd, type: 3}
   m_Name: TicketInspectable
   m_EditorClassIdentifier: Assembly-CSharp::InspectableData
-  title: Boleto
+  title: "Boleto L\xEDnea 217"
   description: El boleto de coletivo denota el horario de transporte (20:45hs)
-  image: {fileID: 21300000, guid: de335f180993dd643998e986538324cb, type: 3}
-  evidence: {fileID: 11400000, guid: 18273ca0756a0284cae1c7e9a451032f, type: 2}
+  image: {fileID: 21300000, guid: 55ad00de0a8afad428845cfbeb1395a7, type: 3}
+  evidence: {fileID: 11400000, guid: c78bf4403404be14ca3c414ed64f845c, type: 2}

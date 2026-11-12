@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: 09006bfd23ba7a7439972377e793790b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3508688329073808087
+    second: Dynamic Motion Blur Duo_0
+  - first:
+      213: 5434847093602783843
+    second: Dynamic Motion Blur Duo_1
+  - first:
+      213: -1116569397252256085
+    second: Dynamic Motion Blur Duo_2
+  - first:
+      213: 7349137226400240380
+    second: Dynamic Motion Blur Duo_3
+  - first:
+      213: 7906017146321506407
+    second: Dynamic Motion Blur Duo_4
+  - first:
+      213: 5670879903010102822
+    second: Dynamic Motion Blur Duo_5
+  - first:
+      213: 2974538395735378751
+    second: Dynamic Motion Blur Duo_6
+  - first:
+      213: 2241388611451699047
+    second: Dynamic Motion Blur Duo_7
+  - first:
+      213: -8382101781249138743
+    second: Dynamic Motion Blur Duo_8
+  - first:
+      213: -5032428103316566157
+    second: Dynamic Motion Blur Duo_9
+  - first:
+      213: -7947815818814689464
+    second: Dynamic Motion Blur Duo_10
+  - first:
+      213: -2403821998011422150
+    second: Dynamic Motion Blur Duo_11
+  - first:
+      213: 702233625465071745
+    second: Dynamic Motion Blur Duo_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dynamic Motion Blur Duo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13
+        width: 730
+        height: 1011
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d2d00a027d51b030800000000000000
+      internalID: 3508688329073808087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Motion Blur Duo_1
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 0
+        width: 786
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36212c6f2a47c6b40800000000000000
+      internalID: 5434847093602783843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Motion Blur Duo_2
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 479
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae05bd8c062180f0800000000000000
+      internalID: -1116569397252256085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Motion Blur Duo_3
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 335
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf29f29be516df560800000000000000
+      internalID: 7349137226400240380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Motion Blur Duo_4
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 335
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76014aae4b0d7bd60800000000000000
+      internalID: 7906017146321506407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Motion Blur Duo_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 327
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62e91d6e93303be40800000000000000
+      internalID: 5670879903010102822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Motion Blur Duo_6
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 318
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3b419049eea74920800000000000000
+      internalID: 2974538395735378751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Motion Blur Duo_7
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 270
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f3f2511130b1f10800000000000000
+      internalID: 2241388611451699047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Motion Blur Duo_8
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 235
+        width: 30
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cfd97917daccab80800000000000000
+      internalID: -8382101781249138743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Motion Blur Duo_9
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 255
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37f8f109d49392ab0800000000000000
+      internalID: -5032428103316566157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Motion Blur Duo_10
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 225
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84fe1534f9fa3b190800000000000000
+      internalID: -7947815818814689464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Motion Blur Duo_11
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 201
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3a6249f0a8e3aed0800000000000000
+      internalID: -2403821998011422150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dynamic Motion Blur Duo_12
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 31
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1882e2303c5deb900800000000000000
+      internalID: 702233625465071745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Dynamic Motion Blur Duo_0: 3508688329073808087
+      Dynamic Motion Blur Duo_1: 5434847093602783843
+      Dynamic Motion Blur Duo_10: -7947815818814689464
+      Dynamic Motion Blur Duo_11: -2403821998011422150
+      Dynamic Motion Blur Duo_12: 702233625465071745
+      Dynamic Motion Blur Duo_2: -1116569397252256085
+      Dynamic Motion Blur Duo_3: 7349137226400240380
+      Dynamic Motion Blur Duo_4: 7906017146321506407
+      Dynamic Motion Blur Duo_5: 5670879903010102822
+      Dynamic Motion Blur Duo_6: 2974538395735378751
+      Dynamic Motion Blur Duo_7: 2241388611451699047
+      Dynamic Motion Blur Duo_8: -8382101781249138743
+      Dynamic Motion Blur Duo_9: -5032428103316566157
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

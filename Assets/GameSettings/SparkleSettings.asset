@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b89dd09d54a02c94d8d9dd603f867611, type: 3}
   m_Name: SparkleSettings
   m_EditorClassIdentifier: Assembly-CSharp::SparkleSettings
-  intervalRange: {x: 3, y: 7}
+  intervalRange: {x: 0.5, y: 2}
   startDelayRange: {x: 1, y: 2}
   twinkleCountRange: {x: 1, y: 2}
   twinkleGapRange: {x: 0.2, y: 0.5}

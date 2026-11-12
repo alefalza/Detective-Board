@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d6073edae784d749af14a2479148e6e, type: 3}
+  m_Name: ProtestaTone
+  m_EditorClassIdentifier: Assembly-CSharp::ToneData
+  displayName: Protesta
+  epilogueText: "Ning\xFAn diario grande quiso publicarlo. Sali\xF3 en un semanario
+    chico, en una imprenta de barrio, con tinta que manchaba los dedos.\n\nPero alguien
+    lo ley\xF3, y despu\xE9s otro. Llegaron cartas, nombres y testigos que hasta
+    entonces hab\xEDan callado.\n\nEsa noche, un auto sin patente se detuvo frente
+    a tu casa y no sigui\xF3 de largo.\n\nSab\xEDas que esto no terminaba ac\xE1.
+    Reci\xE9n empezaba. Lo \xFAnico que pod\xEDas hacer era seguir escribiendo."
+  epilogueVoice: {fileID: 0}

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d6073edae784d749af14a2479148e6e, type: 3}
+  m_Name: NeutralTone
+  m_EditorClassIdentifier: Assembly-CSharp::ToneData
+  displayName: Neutral
+  epilogueText: "El art\xEDculo sali\xF3 en la p\xE1gina once, entre un aviso de
+    remates y el pron\xF3stico del tiempo. Nadie lo desminti\xF3, porque nadie lo
+    ley\xF3 con atenci\xF3n. La versi\xF3n oficial sigui\xF3 en pie, intacta, como
+    siguen en pie las cosas que nadie se molesta en tocar.\n\nEn la cocina, alguien
+    levant\xF3 las sillas y barri\xF3 los vidrios.\n\nLos hechos estaban ah\xED,
+    escritos con cuidado. Pero a veces la verdad, dicha en voz baja, es apenas otra
+    forma del silencio."
+  epilogueVoice: {fileID: 0}

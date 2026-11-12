@@ -105,7 +105,9 @@ public class DeductionResolver : MonoBehaviour
             }
         }
 
-        if (rule.NewUnlockedInspectable != null)
-            SceneryProgress.Instance.Unlock(rule.NewUnlockedInspectable);
+        foreach (InspectableData inspectable in rule.NewUnlockedInspectables)
+        {
+            if (inspectable != null) SceneryProgress.Instance.Unlock(inspectable);
+        }
     }
 }

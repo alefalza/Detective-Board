@@ -130,12 +130,15 @@ public class CorkboardManager : Singleton<CorkboardManager>
 
         if (!item.IsClickingPin(mouseWorldPos)) return GameCursorType.Hover;
 
-        // Pin de una pista de un trío validado: no se puede conectar, sin cursor
-        if (threads.IsLocked(item)) return null;
+        // Pin que no se puede conectar: sin cursor ni hover
+        if (!CanUsePin(item)) return null;
 
         hoveredPin = item;
         return GameCursorType.Pin;
     }
+
+    // Las pistas de un trío validado y las desmentidas no se conectan
+    private bool CanUsePin(EvidenceItem item) => !threads.IsLocked(item) && !item.IsInvalidated;
 
     private void OnClickStarted(InputAction.CallbackContext context)
     {
@@ -184,7 +187,7 @@ public class CorkboardManager : Singleton<CorkboardManager>
 
     private void HandlePinClick(EvidenceItem item)
     {
-        if (threads.IsLocked(item)) return; // pista de un trío validado: no se conecta
+        if (!CanUsePin(item)) return;
 
         if (selectedPinItemA == null)
         {
