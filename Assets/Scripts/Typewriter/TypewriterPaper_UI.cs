@@ -1,3 +1,10 @@
+/*
+ * Nombre: Alejandro Falzarano
+ * Mail: falzarano.alejandro@gmail.com
+ * 
+ * Descripción: anima la apertura y el cierre de la hoja central.
+ */
+
 using UnityEngine;
 
 public class TypewriterPaper_UI : MonoBehaviour
@@ -10,7 +17,6 @@ public class TypewriterPaper_UI : MonoBehaviour
     [SerializeField] private float animationDuration = 0.5f;
 
     [Header("Paper Anim Settings")]
-    [Tooltip("Curvas del fade del centro. Evitar elastic/back: el alpha se clampea y parpadea.")]
     [SerializeField] private iTween.EaseType fadeInEase = iTween.EaseType.easeInCubic;
     [SerializeField] private iTween.EaseType fadeOutEase = iTween.EaseType.easeOutCubic;
     [SerializeField] private iTween.EaseType scaleInEase = iTween.EaseType.easeInCubic;

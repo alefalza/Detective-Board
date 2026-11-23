@@ -1,3 +1,11 @@
+/*
+ * Nombre: Alejandro Falzarano
+ * Mail: falzarano.alejandro@gmail.com
+ * 
+ * Descripción: controla la vista inicial, las vistas del juego y sus transiciones de cámara,
+ * y bloquea los cambios durante las secuencias.
+ */
+
 using UnityEngine;
 using Unity.Cinemachine;
 using System.Collections;
@@ -9,6 +17,9 @@ public class GameViewManager : Singleton<GameViewManager>
 {
     [SerializeField] private CinemachineBrain brain;
 
+    [Header("Initial View")]
+    [SerializeField] private GameView startView = GameView.Scenery;
+
     [Header("Cinemachine Cameras")]
     [SerializeField] private CinemachineCamera sceneryCam;
     [SerializeField] private CinemachineCamera corkboardCam;
@@ -17,10 +28,11 @@ public class GameViewManager : Singleton<GameViewManager>
     [SerializeField] private CinemachineCamera paperCam;
 
     private const int BlendStartTimeoutFrames = 3;
+    private const int ActivePriority = 10;
+    private const int InactivePriority = 5;
 
     public bool IsTransitioning { get; private set; }
 
-    // Una secuencia (ej. la del teléfono) bloquea todo cambio de vista hasta que llame a EndSequence
     public bool IsSequenceRunning { get; private set; }
 
     private bool IsLocked => IsTransitioning || IsSequenceRunning;
@@ -29,9 +41,16 @@ public class GameViewManager : Singleton<GameViewManager>
     public event Action<GameView> TransitionStarted;
     public event Action<GameView> StateChanged;
 
+    protected override void Awake()
+    {
+        base.Awake();
+
+        CurrentView = startView;
+        SetPriorities(startView);
+    }
+
     public void BeginSequence() => IsSequenceRunning = true;
 
-    // Llamar antes del Switch que cierra la secuencia, si no ese Switch también queda bloqueado
     public void EndSequence() => IsSequenceRunning = false;
 
     public void ToggleView()
@@ -44,84 +63,59 @@ public class GameViewManager : Singleton<GameViewManager>
     {
         if (IsLocked || CurrentView != GameView.Corkboard) return;
 
-        CurrentView = GameView.Scenery;
-
-        sceneryCam.Priority = 10;
-        corkboardCam.Priority = 5;
-        phoneCam.Priority = 5;
-        typewriterCam.Priority = 5;
-        paperCam.Priority = 5;
-
-        //EnvironmentLightingManager.Instance?.SetLightingForPhone();
-        StartCoroutine(TransitionRoutine());
+        StartTransition(GameView.Scenery);
     }
 
     public void SwitchToPhone()
     {
         if (IsLocked || CurrentView != GameView.Corkboard) return;
 
-        CurrentView = GameView.Phone;
-
-        sceneryCam.Priority = 5;
-        corkboardCam.Priority = 5;
-        phoneCam.Priority = 10;
-        typewriterCam.Priority = 5;
-        paperCam.Priority = 5;
-
-        //EnvironmentLightingManager.Instance?.SetLightingForPhone();
-        StartCoroutine(TransitionRoutine());
+        StartTransition(GameView.Phone);
     }
 
     public void SwitchToTypewriter()
     {
-        // Solo se llega a la Typewriter desde el tablero o cerrando el papel
         if (IsLocked || (CurrentView != GameView.Corkboard && CurrentView != GameView.Paper)) return;
 
-        CurrentView = GameView.Typewriter;
-
-        sceneryCam.Priority = 5;
-        corkboardCam.Priority = 5;
-        phoneCam.Priority = 5;
-        typewriterCam.Priority = 10;
-        paperCam.Priority = 5;
-
-        EnvironmentLightingManager.Instance?.SetLightingForTypewriter();
-        StartCoroutine(TransitionRoutine());
+        if (EnvironmentLightingManager.Instance != null)
+            EnvironmentLightingManager.Instance.SetLightingForTypewriter();
+        StartTransition(GameView.Typewriter);
     }
 
     public void SwitchToPaper()
     {
         if (IsLocked || CurrentView == GameView.Paper) return;
 
-        CurrentView = GameView.Paper;
-
-        sceneryCam.Priority = 5;
-        corkboardCam.Priority = 5;
-        phoneCam.Priority = 5;
-        typewriterCam.Priority = 5;
-        paperCam.Priority = 10;
-
-        EnvironmentLightingManager.Instance?.SetLightingForPaper();
-        StartCoroutine(TransitionRoutine());
+        if (EnvironmentLightingManager.Instance != null)
+            EnvironmentLightingManager.Instance.SetLightingForPaper();
+        StartTransition(GameView.Paper);
     }
 
     public void SwitchToCorkboard()
     {
-        // Desde Paper solo se vuelve a Typewriter (lo cierra el papel); no se salta directo al tablero
         if (IsLocked || CurrentView == GameView.Corkboard || CurrentView == GameView.Paper) return;
 
-        CurrentView = GameView.Corkboard;
+        if (EnvironmentLightingManager.Instance != null)
+            EnvironmentLightingManager.Instance.SetLightingForCorkboard();
+        StartTransition(GameView.Corkboard);
+    }
 
-        sceneryCam.Priority = 5;
-        typewriterCam.Priority = 5;
-        phoneCam.Priority = 5;
-        corkboardCam.Priority = 10;
-        paperCam.Priority = 5;
-
-        EnvironmentLightingManager.Instance?.SetLightingForCorkboard();
+    private void StartTransition(GameView view)
+    {
+        CurrentView = view;
+        SetPriorities(view);
         StartCoroutine(TransitionRoutine());
     }
-    
+
+    private void SetPriorities(GameView view)
+    {
+        sceneryCam.Priority = view == GameView.Scenery ? ActivePriority : InactivePriority;
+        corkboardCam.Priority = view == GameView.Corkboard ? ActivePriority : InactivePriority;
+        phoneCam.Priority = view == GameView.Phone ? ActivePriority : InactivePriority;
+        typewriterCam.Priority = view == GameView.Typewriter ? ActivePriority : InactivePriority;
+        paperCam.Priority = view == GameView.Paper ? ActivePriority : InactivePriority;
+    }
+
     private IEnumerator TransitionRoutine()
     {
         IsTransitioning = true;

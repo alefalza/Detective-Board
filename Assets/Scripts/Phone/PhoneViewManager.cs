@@ -1,3 +1,10 @@
+/*
+ * Nombre: Alejandro Falzarano
+ * Mail: falzarano.alejandro@gmail.com
+ * 
+ * Descripción: secuencia de la llamada: descolgar, discado, tono, atender, escritura en la libreta y vuelta al tablero.
+ */
+
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -13,7 +20,6 @@ public class PhoneViewManager : MonoBehaviour
     [SerializeField] private Collider2D notebookSpriteCollider;
     [SerializeField] private GameObject openedPhone;
     [SerializeField] private GameObject closedPhone;
-    [Tooltip("Botón que saltea la llamada y la escritura. Su OnClick debe llamar a SkipSequence.")]
     [SerializeField] private GameObject skipButton;
     [SerializeField] private VignetteController vignetteController;
     [SerializeField] private float vignetteDuration = 2f;
@@ -40,7 +46,6 @@ public class PhoneViewManager : MonoBehaviour
         skipButton.SetActive(false);
     }
 
-    // Asignar en el OnClick del botón de saltear
     public void SkipSequence()
     {
         _skipRequested = true;
@@ -76,18 +81,15 @@ public class PhoneViewManager : MonoBehaviour
         _skipRequested = false;
         skipButton.SetActive(true);
 
-        // Descuelga: discado y tono
         SetPhoneSprite(true);
         PlayOneShot(settings.PickUpClip);
         yield return WaitOrSkip(settings.PickUpDuration);
         yield return PlayLineClip(settings.DialClip, settings.DialDuration);
         yield return PlayLineClip(settings.ToneClip, settings.ToneDuration);
 
-        // Atienden
         if (!_skipRequested) PlayOneShot(settings.AnswerClip);
         yield return WaitOrSkip(settings.AnswerDuration + settings.AnswerDelay);
 
-        // Libreta
         if (!_skipRequested)
         {
             handwritingAudioSource.Play();
@@ -100,7 +102,6 @@ public class PhoneViewManager : MonoBehaviour
             onTypingFinished: OnTypingFinished);
         yield return new WaitUntil(() => !keywordTextPlayer.IsPlaying);
 
-        // Cuelga y vuelve al tablero
         SetPhoneSprite(false);
         PlayOneShot(settings.HangUpClip);
         yield return new WaitForSeconds(settings.HangUpDelay);
@@ -137,7 +138,6 @@ public class PhoneViewManager : MonoBehaviour
 
     private bool IsTypingSkipRequested() => _skipRequested || IsNotebookSpriteClicked();
 
-    // En loop para que el clip cubra todo el tiempo que deba sonar
     private void StartLineClip(AudioClip clip)
     {
         phoneLineAudioSource.clip = clip;

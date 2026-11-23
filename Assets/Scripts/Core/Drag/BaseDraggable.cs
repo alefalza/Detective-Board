@@ -1,3 +1,10 @@
+/*
+ * Nombre: Alejandro Falzarano
+ * Mail: falzarano.alejandro@gmail.com
+ * 
+ * Descripción: lógica base de arrastre (offset, suavizado y escala) con hooks para las subclases.
+ */
+
 using UnityEngine;
 
 public abstract class BaseDraggable : MonoBehaviour, IDraggable

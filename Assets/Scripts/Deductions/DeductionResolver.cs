@@ -1,3 +1,10 @@
+/*
+ * Nombre: Alejandro Falzarano
+ * Mail: falzarano.alejandro@gmail.com
+ * 
+ * Descripción: evalúa los tríos conectados contra las reglas y aplica los efectos de una deducción correcta.
+ */
+
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,18 +13,16 @@ public class DeductionResolver : MonoBehaviour
     [Header("Settings")]
     [SerializeField] private DeductionSettings settings;
 
-    [Header("Base de Datos de Deducciones")]
+    [Header("Rules")]
     [SerializeField] private List<DeductionRule> deductionRules = new List<DeductionRule>();
 
-    [Header("Módulos")]
+    [Header("Modules")]
     [SerializeField] private ThreadController threads;
 
     private readonly HashSet<DeductionRule> resolvedRules = new HashSet<DeductionRule>();
 
     public int GroupSize => settings.GroupSize;
     public float ValidatedAnimDuration => settings.ValidatedPunchTime;
-
-    // ── Evaluación (no modifica estado) ──────────────────────────────
 
     public DeductionResult Evaluate(List<EvidenceItem> group)
     {
@@ -52,7 +57,6 @@ public class DeductionResolver : MonoBehaviour
         return new DeductionResult(DeductionOutcome.Far, settings.FarText);
     }
 
-    // Todas las keywords de las frases de resultado (sin repetir)
     public List<string> GetAllKeywords()
     {
         var all = new List<string>();
@@ -72,7 +76,6 @@ public class DeductionResolver : MonoBehaviour
     {
         bool isNewSolve = !resolvedRules.Contains(rule);
 
-        // Si ya estaba resuelta se muestra la frase sin keywords (no se vuelven a emitir)
         string text = isNewSolve ? rule.ResultDescription : StripTags(rule.ResultDescription);
 
         return new DeductionResult(DeductionOutcome.Correct, text, rule, group, isNewSolve);
@@ -83,8 +86,6 @@ public class DeductionResolver : MonoBehaviour
         KeywordTagParser.Extract(tagged ?? string.Empty, out string clean);
         return clean;
     }
-
-    // ── Efectos (se aplican al volver al tablero) ────────────────────
 
     public void Apply(DeductionResult result)
     {

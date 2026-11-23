@@ -1,8 +1,15 @@
+/*
+ * Nombre: Alejandro Falzarano
+ * Mail: falzarano.alejandro@gmail.com
+ * 
+ * Descripción: base genérica para managers con una única instancia, opcionalmente persistente entre escenas.
+ */
+
 using UnityEngine;
 
 public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 {
-    [SerializeField] private bool persist; // Define si la instancia persiste entre escenas
+    [SerializeField] private bool persist;
     
     public static T Instance { get; private set; }
 

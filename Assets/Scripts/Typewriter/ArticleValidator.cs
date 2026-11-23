@@ -1,19 +1,21 @@
+/*
+ * Nombre: Alejandro Falzarano
+ * Mail: falzarano.alejandro@gmail.com
+ * 
+ * Descripción: avisa cuando todos los slots del artículo tienen la keyword correcta.
+ */
+
 using System;
 using System.Text;
 using UnityEngine;
 
-/// <summary>
-/// Valida el artículo final: cuando todos los slots del papel están ocupados,
-/// comprueba que cada keyword coincida con la esperada por su slot.
-/// </summary>
 public class ArticleValidator : MonoBehaviour
 {
-    [Tooltip("Slots del papel. Cada uno debe tener 'Expected Keyword' cargado.")]
     [SerializeField] private KeywordSlot[] articleSlots;
 
     public event Action Solved;
-    public event Action<int> Failed; // cantidad de slots correctos
-    public event Action PlacementChanged; // algún slot se ocupó o se liberó
+    public event Action<int> Failed;
+    public event Action PlacementChanged;
 
     public int PlacedCount
     {
@@ -57,8 +59,8 @@ public class ArticleValidator : MonoBehaviour
         if (_solved) return;
 
         string signature = BuildSignature();
-        if (signature == null) return;              // faltan slots por completar
-        if (signature == _lastSignature) return;    // misma disposición ya evaluada (ej. un chip que vuelve a su slot)
+        if (signature == null) return;
+        if (signature == _lastSignature) return;
 
         _lastSignature = signature;
 
@@ -74,7 +76,6 @@ public class ArticleValidator : MonoBehaviour
         }
     }
 
-    // null si algún slot está vacío; si no, la disposición actual de keywords
     private string BuildSignature()
     {
         var builder = new StringBuilder();

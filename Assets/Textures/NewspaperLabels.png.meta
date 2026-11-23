@@ -1,0 +1,281 @@
+fileFormatVersion: 2
+guid: 86e07abe23c5fc747b30b487517e170c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5123105214999206011
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_0
+  - first:
+      213: 1531450353267642644
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_1
+  - first:
+      213: -7194028087227075232
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_2
+  - first:
+      213: 3223557680784595006
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_3
+  - first:
+      213: -6336042069074126718
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_4
+  - first:
+      213: 1683776651538096502
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_5
+  - first:
+      213: 3736456352757638866
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_6
+  - first:
+      213: -7163940357085529864
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_7
+  - first:
+      213: -2517091429512718738
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_8
+  - first:
+      213: 6293563405792492783
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_9
+  - first:
+      213: -4466082770171317054
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_10
+  - first:
+      213: 8289231443099779100
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_11
+  - first:
+      213: -7102384719085033836
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_12
+  - first:
+      213: -5186271037889405810
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_13
+  - first:
+      213: -6340279795472878619
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_14
+  - first:
+      213: 111015560459381154
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_15
+  - first:
+      213: 5124375439776454064
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_16
+  - first:
+      213: -2887757807879621821
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_17
+  - first:
+      213: -8514543522980391650
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_18
+  - first:
+      213: -3225391091485952075
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_19
+  - first:
+      213: 3359954065160535513
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_20
+  - first:
+      213: 7577723130474659611
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_21
+  - first:
+      213: -4430974397950895268
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_22
+  - first:
+      213: -260520759939307264
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_23
+  - first:
+      213: -870463561486875878
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_24
+  - first:
+      213: 4327769619685387027
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_25
+  - first:
+      213: 6761996022335698449
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_26
+  - first:
+      213: -6438704603050602469
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_27
+  - first:
+      213: 6962990030719758437
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_28
+  - first:
+      213: 2222633008296612196
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_29
+  - first:
+      213: -7537058248468095256
+    second: Vintage Newspaper Labels_ Neutral, Amarillista, Denuncia_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Label_Neutral
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 205
+        width: 700
+        height: 380
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 587650943f217e8b0800000000000000
+      internalID: -5123105214999206011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Amarillista
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 208
+        width: 700
+        height: 380
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4111aa97bfdc04510800000000000000
+      internalID: 1531450353267642644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Denuncia
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 205
+        width: 700
+        height: 380
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065b5acf19da92c90800000000000000
+      internalID: -7194028087227075232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 618128c66a494d1479d621ebc0c45a08
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":709.0,"y":738.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Label_Amarillista: 1531450353267642644
+      Label_Denuncia: -7194028087227075232
+      Label_Neutral: -5123105214999206011
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

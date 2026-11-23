@@ -1,3 +1,10 @@
+/*
+ * Nombre: Alejandro Falzarano
+ * Mail: falzarano.alejandro@gmail.com
+ * 
+ * Descripción: muestra el cursor de mayor prioridad entre los que piden los distintos sistemas.
+ */
+
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,10 +20,6 @@ public enum GameCursorType
     Pin
 }
 
-/// <summary>
-/// Cursor global. Cada sistema pide un cursor con Request(owner, type) y lo retira con Release(owner).
-/// Se muestra el pedido de mayor prioridad (empate: el más reciente); sin pedidos, el Default.
-/// </summary>
 public class CursorManager : Singleton<CursorManager>
 {
     [Serializable]
@@ -25,7 +28,6 @@ public class CursorManager : Singleton<CursorManager>
         public GameCursorType type;
         public Texture2D texture;
         public Vector2 hotspot;
-        [Tooltip("Mayor número = gana sobre los demás. Sugerido: Default 0, Hover 10, Pin 15, Magnifier 20, Grab 30.")]
         public int priority;
     }
 
@@ -63,7 +65,6 @@ public class CursorManager : Singleton<CursorManager>
         }
     }
 
-    /// <summary>Pide un cursor para 'owner'. Reemplaza su pedido anterior; es seguro llamarlo cada frame.</summary>
     public void Request(object owner, GameCursorType type)
     {
         if (_requests.TryGetValue(owner, out CursorRequest existing) && existing.type == type) return;
@@ -77,18 +78,9 @@ public class CursorManager : Singleton<CursorManager>
         Refresh();
     }
 
-    /// <summary>Retira el pedido de 'owner'. No hace nada si no tenía uno.</summary>
     public void Release(object owner)
     {
         if (_requests.Remove(owner)) Refresh();
-    }
-
-    /// <summary>Compatibilidad con código sin migrar: todos los llamadores comparten un mismo dueño.</summary>
-    [Obsolete("Usar Request(owner, type) / Release(owner).")]
-    public void SetCursor(GameCursorType type)
-    {
-        if (type == GameCursorType.Default) Release(_legacyOwner);
-        else Request(_legacyOwner, type);
     }
 
     private int GetPriority(GameCursorType type)
@@ -127,7 +119,6 @@ public class CursorManager : Singleton<CursorManager>
         }
         else
         {
-            // Fallback si no está configurado (por ejemplo, cursor nativo del sistema)
             Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
         }
     }

@@ -1,4 +1,4 @@
-// Shader de UI basado en UI/Default: vuelve transparente la imagen en un radio alrededor de un punto del mundo.
+// Vuelve transparente la imagen en un radio alrededor de un punto del mundo.
 // Lo controla ScenePeekHole: posición, intensidad y forma del agujero.
 Shader "Detective/UI/PeekHole"
 {

@@ -1,21 +1,22 @@
+/*
+ * Nombre: Alejandro Falzarano
+ * Mail: falzarano.alejandro@gmail.com
+ * 
+ * Descripción: lleva el resultado de una deducción a la llamada y aplica sus efectos al volver al tablero.
+ */
+
 using System;
 using System.Collections;
 using UnityEngine;
 
-/// <summary>
-/// Puente entre el tablero y el teléfono: guarda el resultado pendiente, lleva la cámara
-/// al teléfono, entrega el texto a PhoneViewManager y aplica los efectos al volver al tablero.
-/// </summary>
 public class DeductionPhoneBridge : MonoBehaviour
 {
     [SerializeField] private DeductionResolver deductions;
-    [Tooltip("Segundos que se espera, ya en el tablero, antes de aplicar los cambios de la deducción. 0 = instantáneo.")]
     [Min(0f)] [SerializeField] private float applyDelay = 0.5f;
 
     private DeductionResult? _pending;
     private bool _textTaken;
 
-    // true desde que se presenta una deducción hasta que termina la animación de las pistas validadas
     public bool IsResolving { get; private set; }
 
     public event Action ResolveFinished;
@@ -43,7 +44,6 @@ public class DeductionPhoneBridge : MonoBehaviour
         return true;
     }
 
-    // Lo llama PhoneViewManager al entrar al teléfono. false = no hay resultado pendiente.
     public bool TryTakeText(out string text)
     {
         if (!_pending.HasValue || _textTaken)
@@ -70,7 +70,6 @@ public class DeductionPhoneBridge : MonoBehaviour
 
     private IEnumerator ApplyRoutine(DeductionResult result)
     {
-        // Mientras se espera y se anima no se puede consultar ni cambiar de vista
         GameViewManager view = GameViewManager.Instance;
         view.BeginSequence();
 
@@ -78,7 +77,6 @@ public class DeductionPhoneBridge : MonoBehaviour
 
         deductions.Apply(result);
 
-        // El punch de las pistas ignora el timeScale, la espera también
         if (result.IsNewSolve) yield return new WaitForSecondsRealtime(deductions.ValidatedAnimDuration);
 
         view.EndSequence();

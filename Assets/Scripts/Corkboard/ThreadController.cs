@@ -1,33 +1,48 @@
+/*
+ * Nombre: Alejandro Falzarano
+ * Mail: falzarano.alejandro@gmail.com
+ * 
+ * Descripción: crea, dibuja y corta los hilos entre pistas, y detecta los grupos conectados.
+ */
+
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ThreadController : MonoBehaviour
 {
-    [Header("Referencias de Escena")]
+    [Header("References")]
     [SerializeField] private Transform threadsContainer;
     [SerializeField] private LineRenderer activeThreadLine;
     [SerializeField] private AudioSource onThreadCutAudioSource;
 
-    [Header("Ajustes de Hilos")]
+    [Header("Thread Settings")]
     [SerializeField] private float clickTolerance = 0.15f;
     [SerializeField] private Color threadColor = Color.red;
     [Range(0f, 1f)] [SerializeField] private float alpha = 0.6f;
 
-    [Header("Gravedad y Físicas del Hilo")]
+    [Header("Thread Physics")]
     [SerializeField] private int segments = 16;
-    [SerializeField] private float sagFactor = 0.12f; // caída máxima respecto a la distancia entre pines
+    [SerializeField] private float sagFactor = 0.12f;
 
-    public event System.Action ConnectionsChanged; // se creó o se borró un hilo
+    public event System.Action ConnectionsChanged;
 
     private class Connection
     {
         public LineRenderer line;
         public EvidenceItem from;
         public EvidenceItem to;
-        public bool isLocked; // hilos de una deducción validada: no se pueden borrar
+        public bool isLocked;
     }
 
     private readonly List<Connection> connections = new List<Connection>();
+
+    public IEnumerable<(EvidenceItem from, EvidenceItem to, bool isLocked)> Connections
+    {
+        get
+        {
+            foreach (var conn in connections) yield return (conn.from, conn.to, conn.isLocked);
+        }
+    }
 
     public bool HasConnection(EvidenceItem a, EvidenceItem b)
     {
@@ -59,7 +74,6 @@ public class ThreadController : MonoBehaviour
         ConnectionsChanged?.Invoke();
     }
 
-    // Evidencias alcanzables desde 'start' por hilos, pasando solo por items que cumplan 'include'
     public List<EvidenceItem> GetConnectedGroup(EvidenceItem start, System.Func<EvidenceItem, bool> include)
     {
         var group = new List<EvidenceItem> { start };
@@ -79,7 +93,6 @@ public class ThreadController : MonoBehaviour
         return group;
     }
 
-    // Grupos de evidencias conectadas con exactamente 'size' integrantes, sin los ya validados
     public List<List<EvidenceItem>> GetGroupsOfSize(int size)
     {
         var groups = new List<List<EvidenceItem>>();
@@ -97,7 +110,6 @@ public class ThreadController : MonoBehaviour
         return groups;
     }
 
-    // true si la evidencia forma parte de un trío ya validado
     public bool IsLocked(EvidenceItem item)
     {
         foreach (var conn in connections)
@@ -116,7 +128,6 @@ public class ThreadController : MonoBehaviour
         return false;
     }
 
-    // Bloquea los hilos que unen a los items dados (deducción validada)
     public void LockConnectionsBetween(IReadOnlyList<EvidenceItem> items)
     {
         foreach (var conn in connections)
@@ -124,7 +135,7 @@ public class ThreadController : MonoBehaviour
             if (ContainsItem(items, conn.from) && ContainsItem(items, conn.to))
                 conn.isLocked = true;
         }
-        ConnectionsChanged?.Invoke(); // el trío validado deja de contar como consultable
+        ConnectionsChanged?.Invoke();
     }
 
     private static bool ContainsItem(IReadOnlyList<EvidenceItem> items, EvidenceItem item)
@@ -234,7 +245,7 @@ public class ThreadController : MonoBehaviour
         {
             float t = i / (float)segments;
             Vector3 point = Vector3.Lerp(a, b, t);
-            point.y -= sag * 4f * t * (1f - t); // parábola: 0 en los extremos, máxima en el medio
+            point.y -= sag * 4f * t * (1f - t);
             line.SetPosition(i, point);
         }
     }

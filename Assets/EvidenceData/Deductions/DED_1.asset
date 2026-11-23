@@ -31,4 +31,6 @@ MonoBehaviour:
     por radio."
   invalidatedEvidence: {fileID: 0}
   newUnlockedInspectables:
+  - {fileID: 11400000, guid: 621b73f38c5e30d41a110b213f4aad9e, type: 2}
   - {fileID: 11400000, guid: 27efe9f8e93c3774fb84f878f9091b47, type: 2}
+  - {fileID: 11400000, guid: e45f7de4afe7ba04a996f49ccdf94edf, type: 2}

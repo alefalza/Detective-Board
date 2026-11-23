@@ -15,21 +15,23 @@ MonoBehaviour:
   variants:
   - tone: {fileID: 11400000, guid: c24f2b16375f42e4880d1843aa1a774b, type: 2}
     text: "La noche del 24 de mayo, dos <b>trabajadores</b> que se hab\xEDan reunido
-      para escuchar <b>la pelea</b> por radio fueron detenidos en su domicilio a
-      las 23:30. Seg\xFAn el acta, fue <b>la polic\xEDa</b> quien los retir\xF3 <b>con
-      vida</b>, <b>antes de la ley marcial</b>. Horas despu\xE9s, ambos aparecieron
-      <b>fusilados</b> en un descampado. La versi\xF3n oficial de un enfrentamiento
-      no coincide con estos registros."
+      para escuchar <b>la pelea</b> por radio fueron detenidos en el domicilio de
+      uno de ellos alrededor de las 23:30.\nSeg\xFAn el acta, fue <b>la polic\xEDa</b>
+      quien los retir\xF3 del lugar <b>con vida</b>, minutos <b>antes de la ley marcial</b>.\nHoras
+      despu\xE9s ambos fueron encontrados en un descampado, <b>fusilados</b>. La
+      versi\xF3n oficial de un enfrentamiento entre partes no coincide con los registros
+      de esta investigaci\xF3n."
   - tone: {fileID: 11400000, guid: 3ceb71b201f464d4e8ffee5005bf8aca, type: 2}
     text: "\xA1Masacre en la cocina! Dos <b>trabajadores</b> que solo quer\xEDan
-      escuchar <b>la pelea</b> fueron arrancados de su mesa a las 23:30 por <b>la
-      polic\xEDa</b>. \xA1Salieron <b>con vida</b> y amanecieron <b>fusilados</b>
-      en un basural! \xBFLo m\xE1s escandaloso? Los detuvieron <b>antes de la ley
-      marcial</b>. \xBFQui\xE9n dio la orden?"
+      escuchar <b>la pelea</b> fueron arrancados violentamente de su mesa a las 23:30
+      por <b>la polic\xEDa</b>. \xA1Salieron <b>con vida</b> y amanecieron <b>fusilados</b>
+      en un basural! \xBFLo m\xE1s escandaloso? Se dice que los detuvieron minutos
+      <b>antes de la ley marcial</b>. \xBFQui\xE9n dio la orden?"
   - tone: {fileID: 11400000, guid: 951af51cb7ad6144b8b695d35cc499bb, type: 2}
     text: "No hubo enfrentamiento. La noche del 24 de mayo, <b>la polic\xEDa</b>
-      irrumpi\xF3 en una cocina y se llev\xF3 <b>con vida</b> a dos <b>trabajadores</b>
-      que escuchaban <b>la pelea</b> por radio. Los detuvo a las 23:30, <b>antes
-      de la ley marcial</b> que despu\xE9s invoc\xF3 para justificarse. Horas m\xE1s
-      tarde, los dej\xF3 <b>fusilados</b> en un descampado. El parte oficial miente,
-      y sus propias actas lo prueban."
+      irrumpi\xF3 en una vivienda y se llev\xF3 <b>con vida</b> a dos <b>trabajadores</b>
+      inocentes que escuchaban <b>la pelea</b> por radio. Fueron detenidos a las
+      23:30, instantes <b>antes de la ley marcial</b> que la fuerza invoc\xF3 despu\xE9s
+      para justificar sus horrorosos actos. Horas m\xE1s tarde fueron ejecutados
+      y abandonados en un\ndescampado, donde se encontraron <b>fusilados</b>. El
+      parte oficial miente, y sus propios registros lo prueban."

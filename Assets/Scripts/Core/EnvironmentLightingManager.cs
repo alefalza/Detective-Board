@@ -1,27 +1,33 @@
+/*
+ * Nombre: Alejandro Falzarano
+ * Mail: falzarano.alejandro@gmail.com
+ * 
+ * Descripción: ajusta con un fade las luces 2D de la escena según la vista activa.
+ */
+
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Rendering.Universal; // Necesario para Light2D
+using UnityEngine.Rendering.Universal;
 
 public class EnvironmentLightingManager : Singleton<EnvironmentLightingManager>
 {
-    [Header("Luces del Corcho")]
+    [Header("Corkboard Lights")]
     [SerializeField] private Light2D corkboardMainLight;
     [SerializeField] private float corkboardLightTargetIntensity = 0.8f;
 
-    [Header("Luces de la Máquina / Mesa")]
+    [Header("Desk Lights")]
     [SerializeField] private Light2D deskLampSpotlight;
     [SerializeField] private float deskLampTargetIntensity = 1.3f;
     [SerializeField] private Light2D deskPaperBounceLight;
     [SerializeField] private float deskPaperBounceTargetIntensity = 0.3f;
 
-    [Header("Ajustes de Transición")]
-    [SerializeField] private float transitionDuration = 1.0f; // Debe coincidir con la duración del paneo de Cinemachine
+    [Header("Transition Settings")]
+    [SerializeField] private float transitionDuration = 1.0f;
 
     private Coroutine _currentFadeCoroutine;
 
     private void Start()
     {
-        // Estado inicial: Corcho encendido, Lámpara de mesa atenuada o encendida a nivel bajo
         SetLightingForCorkboard(instant: true);
     }
 

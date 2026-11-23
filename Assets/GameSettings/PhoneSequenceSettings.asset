@@ -20,5 +20,5 @@ MonoBehaviour:
   toneDuration: 4
   answerClip: {fileID: 8300000, guid: f67765bc86bc74540846b8e5851e097b, type: 3}
   answerDelay: 1
-  mumblingClip: {fileID: 8300000, guid: 4d69fc36a3103a74899fba1eaec56f99, type: 3}
+  mumblingClip: {fileID: 8300000, guid: 4788daff6ceb1104da6725312cabf62a, type: 3}
   hangUpDelay: 0.5

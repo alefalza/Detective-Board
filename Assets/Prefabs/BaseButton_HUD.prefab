@@ -748,6 +748,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ViewButtonSelector_HUD
   selectedViews: 02000000
+  iconImage: {fileID: 7828500678882656853}
+  selectedIcon: {fileID: 0}
+  backgroundImage: {fileID: 6553710416125630086}
+  selectedBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!114 &3279036459717225203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -761,6 +765,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonHint_HUD
   tracker: {fileID: 0}
+  buttonPivot: {fileID: 0}
+  phoneBridge: {fileID: 0}
   activeViews: 
   heartbeatInterval: 4
   beatAmount: {x: 0.2, y: 0.2, z: 0}

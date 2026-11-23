@@ -1,3 +1,10 @@
+/*
+ * Nombre: Alejandro Falzarano
+ * Mail: falzarano.alejandro@gmail.com
+ * 
+ * Descripción: resultado de evaluar un trío: lejos, cerca o correcto.
+ */
+
 using System.Collections.Generic;
 
 public enum DeductionOutcome { Far, Close, Correct }
@@ -9,7 +16,6 @@ public readonly struct DeductionResult
     public DeductionRule Rule { get; }
     public IReadOnlyList<EvidenceItem> Participants { get; }
 
-    // true solo la primera vez que se resuelve la regla (aplica efectos y emite keywords)
     public bool IsNewSolve { get; }
 
     public DeductionResult(

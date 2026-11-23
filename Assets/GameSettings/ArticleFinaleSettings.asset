@@ -13,7 +13,17 @@ MonoBehaviour:
   m_Name: ArticleFinaleSettings
   m_EditorClassIdentifier: Assembly-CSharp::ArticleFinaleSettings
   cleanCopyDelay: 0.8
+  liftScale: 1.12
+  liftDuration: 0.8
+  liftEase: 13
+  slamDuration: 0.12
+  slamEase: 6
+  impactPunchAmount: {x: 0.04, y: 0.04, z: 0}
+  impactPunchTime: 0.3
+  impactClip: {fileID: 0}
   selectorFadeDuration: 0.4
   printDelay: 1.5
   endingFadeDuration: 2
   epilogueTextDelay: 1
+  epilogueHoldDuration: 3
+  epilogueTextFadeDuration: 2

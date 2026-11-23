@@ -1,3 +1,11 @@
+/*
+ * Nombre: Alejandro Falzarano
+ * Mail: falzarano.alejandro@gmail.com
+ * 
+ * Descripción: maneja el input del tablero: arrastre de pistas, conexión de hilos,
+ * cursores y consulta de la fuente.
+ */
+
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -5,10 +13,9 @@ using UnityEngine.SceneManagement;
 
 public class CorkboardManager : Singleton<CorkboardManager>
 {
-    [Header("Referencias de Escena")]
     [SerializeField] private Camera mainCamera;
 
-    [Header("Módulos")]
+    [Header("Modules")]
     [SerializeField] private ThreadController threads;
     [SerializeField] private DeductionResolver deductions;
     [SerializeField] private DeductionPhoneBridge phoneBridge;
@@ -24,14 +31,12 @@ public class CorkboardManager : Singleton<CorkboardManager>
     private EvidenceItem selectedPinItemA;
     private EvidenceItem lastConnectedItem;
 
-    // Dueño propio para el cursor de hover (el de Grab usa 'this'); así conviven sin pisarse
     private readonly object _hoverCursorOwner = new object();
     private GameCursorType? _hoverCursor;
     private EvidenceItem _hoveredPinItem;
 
     public bool CanConsult { get; private set; }
 
-    // true cuando hay al menos un grupo conectado con el tamaño exacto requerido
     public event System.Action<bool> CanConsultChanged;
 
     protected override void Awake()
@@ -51,6 +56,16 @@ public class CorkboardManager : Singleton<CorkboardManager>
         clickAction.canceled += OnClickCanceled;
         rightClickAction.performed += OnRightClickPerformed;
         threads.ConnectionsChanged += RefreshCanConsult;
+    }
+
+    private void Start() => GameViewManager.Instance.TransitionStarted += OnTransitionStarted;
+
+    private void OnTransitionStarted(GameView view) => CancelConnection();
+
+    private void OnDestroy()
+    {
+        if (GameViewManager.Instance != null)
+            GameViewManager.Instance.TransitionStarted -= OnTransitionStarted;
     }
 
     private void OnDisable()
@@ -73,7 +88,7 @@ public class CorkboardManager : Singleton<CorkboardManager>
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene("GameplayScene");
+            //SceneManager.LoadScene("GameplayScene");
         }
 
         Vector3 mouseWorldPos = GetMouseWorldPosition();
@@ -90,8 +105,6 @@ public class CorkboardManager : Singleton<CorkboardManager>
         UpdateItemHoverCursor(mouseWorldPos, !IsInputBlocked() && draggedItem == null);
     }
 
-    // Cursor de hover sobre las evidencias: Pin sobre el pin, Hover sobre el resto
-    // (el Grab, al arrastrar, tiene más prioridad)
     private void UpdateItemHoverCursor(Vector3 mouseWorldPos, bool canHover)
     {
         EvidenceItem pinItem = null;
@@ -108,7 +121,6 @@ public class CorkboardManager : Singleton<CorkboardManager>
         else CursorManager.Instance.Release(_hoverCursorOwner);
     }
 
-    // El pin hovereado crece; al dejar de hoverearlo (o bloquearse el input) vuelve a su tamaño
     private void SetHoveredPin(EvidenceItem item)
     {
         if (item == _hoveredPinItem) return;
@@ -130,14 +142,12 @@ public class CorkboardManager : Singleton<CorkboardManager>
 
         if (!item.IsClickingPin(mouseWorldPos)) return GameCursorType.Hover;
 
-        // Pin que no se puede conectar: sin cursor ni hover
         if (!CanUsePin(item)) return null;
 
         hoveredPin = item;
         return GameCursorType.Pin;
     }
 
-    // Las pistas de un trío validado y las desmentidas no se conectan
     private bool CanUsePin(EvidenceItem item) => !threads.IsLocked(item) && !item.IsInvalidated;
 
     private void OnClickStarted(InputAction.CallbackContext context)
@@ -209,7 +219,6 @@ public class CorkboardManager : Singleton<CorkboardManager>
         lastConnectedItem = b;
     }
 
-    // Botón "Consultar fuente": evalúa el trío conectado en el teléfono
     public void ConsultSource()
     {
         if (IsInputBlocked()) return;
@@ -232,7 +241,6 @@ public class CorkboardManager : Singleton<CorkboardManager>
         CanConsultChanged?.Invoke(canConsult);
     }
 
-    // Si hay varios tríos conectados, se consulta el que contiene la última pista conectada
     private List<EvidenceItem> PickGroup(List<List<EvidenceItem>> groups)
     {
         foreach (List<EvidenceItem> group in groups)

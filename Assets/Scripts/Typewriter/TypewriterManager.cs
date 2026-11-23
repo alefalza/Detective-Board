@@ -1,3 +1,10 @@
+/*
+ * Nombre: Alejandro Falzarano
+ * Mail: falzarano.alejandro@gmail.com
+ * 
+ * Descripción: maneja las vistas Typewriter y Paper, y las keywords disponibles.
+ */
+
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -10,33 +17,27 @@ public class TypewriterManager : Singleton<TypewriterManager>
     [SerializeField] private TypewriterPanels_UI panelsUI;
     [SerializeField] private TypewriterPaper_UI paperUI;
 
-    [Header("Zona interactiva (papel)")]
-    [Tooltip("Click en esta zona abre el Paper (desde la Typewriter).")]
+    [Header("Interactive Zone")]
     [SerializeField] private RectTransform paperHotspot;
-    [Tooltip("Imagen de UI (con Raycast Target) cuyo click cierra el Paper.")]
     [SerializeField] private RectTransform paperCloseTarget;
-    [Tooltip("Cámara del Canvas. Dejar vacío si el Canvas es Screen Space - Overlay.")]
     [SerializeField] private Camera canvasCamera;
 
     [Header("Bypass")]
-    [Tooltip("Si está activo, la vista Typewriter es solo de paso: Corkboard → Typewriter → Paper al entrar, y Paper → Typewriter → Corkboard al salir.")]
     [SerializeField] private bool bypassTypewriterView = true;
 
-    [Tooltip("Si está desactivado, una vez en el Paper no se puede salir: el artículo es el cierre del juego.")]
     [SerializeField] private bool allowClosePaper = false;
 
     private List<string> _availableKeywords = new List<string>();
-    private GameCursorType? _hoverCursor;   // cursor que este manager tiene pedido (null = ninguno)
+    private GameCursorType? _hoverCursor;
     private readonly List<RaycastResult> _raycastResults = new List<RaycastResult>();
     private PointerEventData _pointerData;
     private GameViewManager _gameViewManager;
     private GameView _lastView;
-    private GameView _settledView;      // última vista en la que terminó una transición
-    private GameView? _bypassTarget;  // vista a la que se sigue solo al llegar a la Typewriter
+    private GameView _settledView;
+    private GameView? _bypassTarget;
 
     public List<string> AvailableKeywords => _availableKeywords;
 
-    // Se dispara cuando se suma una keyword que no estaba disponible
     public event System.Action KeywordAdded;
 
     public void AddKeyword(string keyword)
@@ -48,11 +49,35 @@ public class TypewriterManager : Singleton<TypewriterManager>
         }
     }
 
+    public void ShuffleKeywords()
+    {
+        if (_availableKeywords.Count < 2) return;
+
+        var original = new List<string>(_availableKeywords);
+        do
+        {
+            for (int i = _availableKeywords.Count - 1; i > 0; i--)
+            {
+                int j = Random.Range(0, i + 1);
+                (_availableKeywords[i], _availableKeywords[j]) = (_availableKeywords[j], _availableKeywords[i]);
+            }
+        }
+        while (IsSameOrder(original, _availableKeywords));
+    }
+
+    private static bool IsSameOrder(List<string> a, List<string> b)
+    {
+        for (int i = 0; i < a.Count; i++)
+        {
+            if (a[i] != b[i]) return false;
+        }
+        return true;
+    }
+
     public void AddKeywords(IEnumerable<string> keywords)
     {
         foreach (string keyword in keywords) AddKeyword(keyword);
 
-        // Si el panel ya está abierto, se refresca; si no, se arma al abrir la vista Paper
         if (_gameViewManager.CurrentView == GameView.Paper)
             panelsUI.RefreshUIKeywords();
     }
@@ -138,21 +163,19 @@ public class TypewriterManager : Singleton<TypewriterManager>
 
         GameView current = activeView;
 
-        // En Paper se cierra clickeando la otra imagen; en el resto, el papel abre
         bool hovering = inPaper ? IsPointerOverCloseTarget() : IsPointerOverPaperHotspot();
 
         if (!hovering) SetHover(null);
         else SetHover(GameCursorType.Magnifier);
 
-        // Un click que agarra una keyword (EventSystem corre antes y ya la marcó como Dragged) no cuenta como click
-        if (!hovering || !WasClickedThisFrame() || KeywordChipUI.Dragged != null) return;
+        if (!hovering || !WasClickedThisFrame() || KeywordChip_UI.Dragged != null) return;
 
         SetHover(null);
 
         if (current == GameView.Typewriter)
             _gameViewManager.SwitchToPaper();
         else
-            _gameViewManager.SwitchToTypewriter(); // desde Paper cierra (con bypass sigue al Corkboard)
+            _gameViewManager.SwitchToTypewriter();
     }
 
     private bool IsPointerOverPaperHotspot()
@@ -161,8 +184,6 @@ public class TypewriterManager : Singleton<TypewriterManager>
                && RectTransformUtility.RectangleContainsScreenPoint(paperHotspot, GetPointerPosition(), canvasCamera);
     }
 
-    // Raycast de UI: cuenta solo si lo que está más arriba bajo el puntero es la imagen (o un hijo suyo),
-    // así el papel y las keywords que estén encima la tapan
     private bool IsPointerOverCloseTarget()
     {
         if (paperCloseTarget == null || EventSystem.current == null) return false;

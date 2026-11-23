@@ -1,6 +1,6 @@
 Shader "UI/LampBlackout"
 {
-    // Overlay negro con un "agujero" radial transparente centrado en la lámpara.
+    // Overlay negro con un "agujero" radial transparente centrado en un inspectable.
     // El color/alpha del overlay sale del Image.color (vertex color).
     Properties
     {
